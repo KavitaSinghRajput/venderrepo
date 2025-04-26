@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
 import "./HeroSection.css";
-import Image from '../../assets/hero1image.png'
+import Image1 from '../../assets/corporate.png'
+import Image2 from '../../assets/conference.webp'
+import Image3 from '../../assets/Artist.png'
+
 
 const slides = [
   {
     title: "Plan Your Corporate Event At Your Fingertips - Seamless, Swift, And Stress-Free!",
     description: "Hire4Event: Your trusted corporate event planner in Delhi, Gurgaon and Noida, delivering seamless and impactful events tailored to your business needs!",
-    image: Image ,
+    image: Image1 ,
     buttonText: "Start Planning",
   },
   {
     title: "Corporate Offsites, Team-Building, And Travel - Flawless Planning, Effortless Execution - Hire4Event!",
     description: "Expertly planned corporate offsites, team-building, and travel- seamless execution, stress-free experiences, only with Hire4Event!",
-    image:  Image,
+    image:  Image2,
     buttonText: "Start Planning",
   },
   {
     title: "Host A Conference That Speaks Success - Planned By Experts, Executed To Perfection!",
     description: "Hire4Event supplied security equipment for the 2019 UN COP14 at India Expo Mart, Greater Noida, ensuring safety for PM Modi and the event.",
-    image: Image,
+    image: Image3,
     buttonText: "Explore Now",
   },
 ];

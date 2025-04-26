@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../assets/heroimage.png"
+import Image from "../../assets/hero1image.jpg"
 
 export default function PastEvent() {
   return (
