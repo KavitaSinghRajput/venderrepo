@@ -1,0 +1,127 @@
+.planning-event {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff;
+  }
+  
+  .planning-event h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .planning-event h1 span {
+    color: #007BFF; /* Blue color for "Event Management" */
+  }
+  
+  .planning-event p {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .feature {
+    background: #f5f5f5;
+    padding: 30px 20px;
+    border-radius: 16px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-8px);
+    background-color: #e9f2ff;
+  }
+  
+  .feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .feature h4 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .search-artist {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .search-artist:hover {
+    background-color: #0056b3;
+  }
+  
+  .expert-planning {
+    background-color: #d32f2f;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .expert-planning:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* ---------------------- Responsive Part ---------------------- */
+  
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      width: 90%;
+      max-width: 350px;
+    }
+  
+    .planning-event h1 {
+      font-size: 2rem;
+    }
+  
+    .planning-event p {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-artist, .expert-planning {
+      width: 90%;
+      font-size: 1rem;
+    }
+  }
+  

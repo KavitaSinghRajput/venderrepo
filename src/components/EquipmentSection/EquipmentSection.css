@@ -1,0 +1,68 @@
+.equipment-section {
+    padding: 60px 0;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .subheading {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .main-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .main-heading span {
+    color: red;
+  }
+  
+  .description {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .description .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .slider-track {
+    display: flex;
+    width: calc(250px * 10); /* 10 slides ka space */
+    animation: scroll 20s linear infinite;
+  }
+  
+  .slide {
+    width: 250px;
+    flex-shrink: 0;
+    margin: 0 10px;
+  }
+  
+  .slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

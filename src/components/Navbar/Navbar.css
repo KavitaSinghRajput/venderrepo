@@ -43,6 +43,10 @@
   .dropdown-item:hover {
     background-color: #f7f7f7;
   }
+
+
+
+
   @media (max-width: 768px) {
     .navbar-brand {
       margin: auto;
