@@ -11,6 +11,11 @@ import ArtistSlider from "../../components/ArtistSlider/ArtistSlider";
 import TrustCompany from "../../components/TrustCompany/TrustCompany";
 import EquipmentSection from "../../components/EquipmentSection/EquipmentSection";
 import PlanningEvent from "../../components/PlanningEvent/PlanningEvent";
+import ClientFeedBack from "../../components/ClientFeedBack/ClientFeedBack";
+import ExpertPlanner from "../../components/ExpertPlanner/ExpertPlanner";
+import Faq from "../../components/Faq/Faq";
+import BlogPosts from "../../components/BlogPost/BlogPosts";
+import OnlineBooking from "../../components/OnlineBooking/OnlineBooking";
 
 const Home = () => {
   return (
@@ -43,6 +48,21 @@ const Home = () => {
       </div>
       <div>
         <PlanningEvent />
+      </div>
+      <div>
+        <ExpertPlanner/>
+      </div>
+      <div>
+        <ClientFeedBack/>
+      </div>
+      <div>
+        <Faq/>
+      </div>
+      <div>
+        <BlogPosts/>
+      </div>
+      <div>
+        <OnlineBooking/>
       </div>
     </div>
   );
