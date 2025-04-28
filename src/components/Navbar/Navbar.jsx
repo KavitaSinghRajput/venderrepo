@@ -57,8 +57,18 @@ function Navbar() {
         <li className="nav-item">
           <Link className="nav-link"  to='/' >Contact Us</Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link"   to='/' >Registration</Link>
+        <li className="nav-item dropdown">
+          <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ACCOUNT
+           </Link>
+           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><Link className="dropdown-item" to="/login">Login</Link></li>
+            <li><Link className="dropdown-item" to="/signup">Signup</Link></li>
+            <li><Link className="dropdown-item" to="/Registration">Vendor Registration</Link></li>
+            <li><Link className="dropdown-item" to="/MyBoard">MyDashBoard</Link></li>
+            <li><Link className="dropdown-item" to="/BasicDetail">CreateArtistProfile</Link></li>
+            
+          </ul>
         </li>
       </ul>
     </div>
