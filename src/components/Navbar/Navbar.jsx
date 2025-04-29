@@ -37,10 +37,47 @@ function Navbar() {
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Venue Booking
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                VenueBooking
               </Link>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <Link className="dropdown-item" to="/Indore">
+                    IndoreCity
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    BhopalCity
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    UjjainCity
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    JabalpurCity
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    GwaliorCity
+                  </Link>
+                </li>
+              </ul>
             </li>
 
             <li className="nav-item dropdown">

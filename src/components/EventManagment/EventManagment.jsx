@@ -1,36 +1,42 @@
 import React from 'react'
 import './EventManagment.css'
+import em1 from '../EventManagment/1.gif'
+import em2 from '../EventManagment/2.gif'
+import em3 from '../EventManagment/3.gif'
+import em4 from '../EventManagment/4.gif'
+import em5 from '../EventManagment/5.gif'
+import em6 from '../EventManagment/6.gif'
 
 const events = [
        {
     title: 'Entertainment For Corporate Event',
     link: 'Make It Happen',
-    img: '/images/event1.png'
+    img: em1
   },
   {
     title: 'Exhibition Organiser',
     link: 'Plan Your Showcase',
-    img: '/images/event2.png'
+    img: em2
   },
   {
     title: 'Corporate Event Organiser',
     link: 'Book Your Event Now',
-    img: '/images/event3.png'
+    img:  em3
   },
   {
     title: 'Sports Event Organiser',
     link: 'Plan Your Sports Event',
-    img: '/images/event4.png'
+    img:  em4
   },
   {
     title: 'Annual Day & Sales Meet Organizer',
     link: 'Stage Your Meet',
-    img: '/images/event5.png'
+    img:  em5
   },
   {
     title: 'Brand Promotion & Launch Organiser',
     link: 'Shine Your Brand',
-    img: '/images/event6.png'
+    img:  em6
   },
 ];
 
@@ -42,12 +48,12 @@ const EventManagement = () => {
 
 <div className="row heading-row">
           <div className="col-12 text-center">
-            <h2 className="main-heading">Event Planner in Noida</h2>
+            <h2 className="main-heading">Event Planner in INDORE</h2>
             <h1 className="sub-heading">Hire4Event: Event management company</h1>
             <p className="description">
-              Hire4event is a leading top event management company in Delhi NCR, offering top-notch
-              services for all your event management needs in India, including corporate event organising
-              in Gurgaon, birthday party planning in Greater Noida, and audio-visual equipment rentals across the region.
+              GNVIndia is a leading top event management company in Indore, offering top-notch
+              services for all your event management needs in Madhya Pradesh, including corporate event organising
+              in Indore,  and audio-visual equipment rentals across the region.
             </p>
           </div>
         </div>
