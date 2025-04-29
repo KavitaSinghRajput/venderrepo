@@ -9,12 +9,12 @@ const CorporateEventPlanner = () => {
         <div className="row">
           <div className="col-md-12 OOSHeader06 no-padding no-margin">
             <p className="PatternServices">
-              Corporate <span>Event Planner</span> in Noida
+             <h2> Corporate <span>Event Planner</span> in INDORE</h2> 
             </p>
             <br />
             <p className="OOSShortDesc06">
               Are you looking for a hassle-free way to plan your next corporate event,
-              wedding, or conference? Hire4Event is <span>India's leading online event planning platform</span>,
+              wedding, or conference? GNVIndia is <span>India's leading online event planning platform</span>,
               offering comprehensive solutions tailored to meet your diverse needs. With transparent pricing and
               options available across Pan India, we make event planning seamless and stress-free.
             </p>

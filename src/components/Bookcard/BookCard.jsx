@@ -10,13 +10,12 @@ export default function BookCard() {
         <div className="card" style={{ width: "18rem" }}>
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
+          <h5 className="card-title">Organize Conference</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Host a flawless conference! Our expert planning ensures smooth execution, great engagement, and a stress-free experience.
           </p>
           <a href="#" className="btn btn-primary">
-            Go somewhere
+            Start Planning Today
           </a>
         </div>
       </div>
@@ -25,13 +24,12 @@ export default function BookCard() {
         <div className="card" style={{ width: "18rem" }}>
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
+          <h5 className="card-title">Book Artists</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Make your event unforgettable! Book top artists, live bands, DJs, comedians, and actors—all in one easy place.
           </p>
           <a href="#" className="btn btn-primary">
-            Go somewhere
+            Book an Artist
           </a>
         </div>
       </div>
@@ -40,13 +38,12 @@ export default function BookCard() {
         <div className="card" style={{ width: "18rem" }}>
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
+          <h5 className="card-title">Rent Event Equipment</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Get everything you need for your event! From sound and lighting to staging and decor, we've got you covered.
           </p>
           <a href="#" className="btn btn-primary">
-            Go somewhere
+            Explore Equipment
           </a>
         </div>
       </div>
@@ -58,13 +55,12 @@ export default function BookCard() {
     <div className="card" style={{ width: "18rem" }}>
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
+          <h5 className="card-title">Plan Corporate Offsite</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Plan the perfect corporate offsite! We'll handle travel, stays, and team activities so you can focus on bonding.
           </p>
           <a href="#" className="btn btn-primary">
-            Go somewhere
+          Plan Offsite Event
           </a>
         </div>
       </div>
@@ -73,13 +69,12 @@ export default function BookCard() {
     <div className="card" style={{ width: "18rem" }}>
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
+          <h5 className="card-title">Book Event Venue</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Find the right venue hassle-free! Whether it's a wedding, corporate event, or launch, we'll help you book the best space.
           </p>
           <a href="#" className="btn btn-primary">
-            Go somewhere
+          Book a Venue 
           </a>
         </div>
       </div>
@@ -88,13 +83,12 @@ export default function BookCard() {
       <div className="card" style={{ width: "18rem" }}>
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
+          <h5 className="card-title">Corporate Team Building</h5>
           <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          Bring your team closer! Fun and engaging activities designed to boost morale, teamwork, and productivity effortlessly.
           </p>
           <a href="#" className="btn btn-primary">
-            Go somewhere
+          Plan Team Event
           </a>
         </div>
       </div>

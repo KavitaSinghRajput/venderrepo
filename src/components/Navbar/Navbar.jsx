@@ -1,80 +1,188 @@
-import React from 'react'
-import logo from '../../assets/logo.png'
-import './Navbar.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import logo from "../../assets/logo.png";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar  navbar-expand-lg ">
-  <div className="container-fluid">
-   
-   
-   
-    <Link className="navbar-brand" to="/">
-    <img src={logo} alt="Gnv logo" style={{height:"45px"}} />
-    </Link>
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          <img src={logo} alt="Gnv logo" style={{ height: "45px" }} />
+        </Link>
 
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="#">Home</Link>
-        </li>
-        
-        <li className="nav-item">
-          <Link className="nav-link" to='/' >About Us</Link>
-        </li>
-        
-        <li className="nav-item">
-          <Link className="nav-link" to='/' >Venue Booking</Link>
-        </li>
-        
-        <li className="nav-item">
-          <Link className="nav-link" to='/'  >Artist Booking</Link>
-        </li>
-       
-        <li className="nav-item">
-          <Link className="nav-link" to='/' >Event Rental</Link>
-        </li>
-       
-        <li className="nav-item">
-          <Link className="nav-link" to='/' >Event Planner</Link>
-        </li>
-        
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </Link>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><Link className="dropdown-item" to="#">Action</Link></li>
-            <li><Link className="dropdown-item" to="#">Another action</Link></li>
-            <li><Link className="dropdown-item" to="#">Something else here</Link></li>
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="#">
+                Home
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                About Us
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Venue Booking
+              </Link>
+            </li>
+
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ArtistBooking
+              </Link>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <Link className="dropdown-item" to="/Indore">
+                    Indore
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Bhopal
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Ujjain
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Jabalpur
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Gwalior
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Event Rental
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Event Planner
+              </Link>
+            </li>
+
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </Link>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Action
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Another action
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Something else here
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Contact Us
+              </Link>
+            </li>
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ACCOUNT
+              </Link>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <Link className="dropdown-item" to="/login">
+                    Login
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/signup">
+                    Signup
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/Registration">
+                    Vendor Registration
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/MyBoard">
+                    MyDashBoard
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/BasicDetail">
+                    CreateArtistProfile
+                  </Link>
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link"  to='/' >Contact Us</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ACCOUNT
-           </Link>
-           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><Link className="dropdown-item" to="/login">Login</Link></li>
-            <li><Link className="dropdown-item" to="/signup">Signup</Link></li>
-            <li><Link className="dropdown-item" to="/Registration">Vendor Registration</Link></li>
-            <li><Link className="dropdown-item" to="/MyBoard">MyDashBoard</Link></li>
-            <li><Link className="dropdown-item" to="/BasicDetail">CreateArtistProfile</Link></li>
-            
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  )
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

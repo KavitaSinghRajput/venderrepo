@@ -1,6 +1,6 @@
 .card {
     border-radius: 20px;
-    background-color: #fdfdfd; /* light pink background */
+    background-color: #fdfdfd; 
     border: none;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@
   }
   
   .card-title span {
-    color: #e53935; /* Red/pink highlight */
+    color: #e53935; 
   }
   
   .card-text {

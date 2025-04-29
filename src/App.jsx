@@ -7,6 +7,7 @@ import Login from './pages/Login/Login'
 import Signup from './pages/SignUp/SignUp'
 import VendorRegistration from './pages/VendorRegistration/VendorRegistration'
 import MyBoard from './pages/MyBoard/MyBoard'
+import Indore from './ArtistBooking/Indore/Indore'
 
 import BasicDetail from './CreateArtistProfile/BasicDetail/BasicDetail'
 import PrfoInfo from './CreateArtistProfile/PrfoInfo/PrfoInfo'
@@ -24,6 +25,7 @@ function App() {
          <Route path="/signup" element={<Signup />} />
          <Route path="/Registration" element={<VendorRegistration />} />
          <Route path="/MyBoard" element={<MyBoard />} />
+         <Route path="/Indore" element={<Indore />} />
          
          <Route path="/BasicDetail" element={<BasicDetail />} />
          <Route path="/PrfoInfo" element={<PrfoInfo/>} />

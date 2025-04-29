@@ -2,12 +2,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 20px;     
   }
   
   .PopLogoImg {
-    height: 60px;
-    width: auto;
+    height: 100%;
+    
     max-width: 100%;
     object-fit: contain;
     padding: 10px;
