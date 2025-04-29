@@ -24,13 +24,13 @@ const BlogPosts = () => {
                 className="img-fluid mb-3"
               />
               <h5 className="blog-heading">
-                Hire4Event: Revolutionizing Event Planning in India with Artists, Equipment, Venues, and Corporate Offsites
+                GNVIndia: Revolutionizing Event Planning in India with Artists, Equipment, Venues, and Corporate Offsites
               </h5>
               <p className="blog-text">
                 Planning a successful event—whether a corporate conference, a wedding, a live concert, or a team-building offsite—can feel overwhelming...
               </p>
               <div className="read-more">
-                Read more about "Hire4Event: Revolutionizing Event Planning in India with Artists, Equipment, Venues, and Corporate Offsites"
+                Read more about "GNVIndia: Revolutionizing Event Planning in Indore with Artists, Equipment, Venues, and Corporate Offsites"
               </div>
             </div>
           </div>

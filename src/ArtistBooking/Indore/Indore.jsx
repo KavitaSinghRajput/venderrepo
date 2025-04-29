@@ -13,14 +13,12 @@ import image8 from  '../../ArtistBooking/Indore/assets1/paridhi sharma.jpeg'
 const Indore = () => {
 
    const artistprofile = [ 
-       
-
-       {
+  {
         image:image1,
         artist:"Boby chorasiya",
         rating:"4 star",
         time:"30min",
-       },
+  },
        
        {  image:image2,
         artist:"Ansh bhawser",
@@ -48,7 +46,7 @@ const Indore = () => {
         artist:"ankita lokhande",
         rating:"4 star",
         time:"30min",
-       },
+       },   
        {  image:image7,
         artist:"asad khan",
         rating:"4 star",
@@ -85,7 +83,7 @@ const Indore = () => {
       <div className="row card-row1">
       {artistprofile.map((index,item) => (
           <div className="col card1" key={item}>
-            <img style={{width:"250px",height:"200px"}} src={index.image} alt="vghghg"  />
+         <img style={{width:"250px",height:"200px"}} src={index.image} alt="vghghg"  />
             <h3>{index.artist}</h3>
             <div className="rating"> {index.rating}</div>
             <p><b>Performance Duration: </b> {index.time} -- mins</p>

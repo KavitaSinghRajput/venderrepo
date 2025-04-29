@@ -4,7 +4,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  return (
+  return (   
     <nav className="navbar  navbar-expand-lg ">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
@@ -53,7 +53,7 @@ function Navbar() {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <Link className="dropdown-item" to="/Indore">
+                  <Link className="dropdown-item" to="/IndoreCity">
                     IndoreCity
                   </Link>
                 </li>

@@ -6,7 +6,7 @@
     padding: 10px 20px;
   }
   
-  .navbar-brand img {
+  .navbar-brand img {    
     height: 45px;
     object-fit: contain;
   }
