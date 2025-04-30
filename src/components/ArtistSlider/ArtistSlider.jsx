@@ -1,32 +1,37 @@
 import React, { useState } from "react";
 import "./ArtistSlider.css";
+import img from './assets5/ankita lokhande.webp';
+import img1 from './assets5/ansh bhawser.jpg';
+import img2 from './assets5/oyye indori.jpeg';
+import img3 from './assets5/rahul jain.jpg';
+import img4 from './assets5/zakirkhan.jpeg';
 
 const artistData = [
   {
-    img: "/images/artist1.jpg",
-    name: "Lipika Samanta Saxophone",
-    info: "Live Band | Kolkata | 90-120 mins"
+    img: img,
+    name: "Ankita Lokhande",
+    info: "BOOK NOW",
   },
   {
-    img: "/images/artist2.jpg",
-    name: "Samay Raina",
-    info: "Comedian | Pune | 45-60 mins"
+    img: img1,
+    name: "Ansh Bhawser",
+    info: "BOOK NOW",
   },
   {
-    img: "/images/artist3.jpg",
-    name: "Another Artist",
-    info: "Singer | Delhi | 60 mins"
+    img: img2,
+    name: "Oyye Indori",
+    info: "BOOK NOW",
   },
   {
-    img: "/images/artist4.jpg",
-    name: "More Artist",
-    info: "DJ | Mumbai | 90 mins"
+    img: img3,
+    name: "Rahul Jain",
+    info: "BOOK NOW",
   },
   {
-    img: "/images/artist5.jpg",
-    name: "Famous Artist",
-    info: "Performer | Bangalore | 75 mins"
-  }
+    img: img4,
+    name: "Zakir Khan",
+    info: "BOOK NOW",
+  },
 ];
 
 const ArtistSlider = () => {
@@ -51,7 +56,7 @@ const ArtistSlider = () => {
           <p className="section-description">
             From live concerts to corporate events, our <span>artist booking services</span> and DJ bookings bring unmatched talent and energy, making every moment magical.
           </p>
-          <button className="btn btn-danger">Book Your Artist →</button>
+          
         </div>
       </div>
 
@@ -61,22 +66,18 @@ const ArtistSlider = () => {
         </div>
         <div className="col-10">
           <div className="slider-holder">
-            {artistData.map((artist, index) => (
-              <div
-                key={index}
-                className={`slider-card ${index === current ? "active" : ""}`}
-              >
-                <img src={artist.img} alt={artist.name} />
-                <h5>{artist.name}</h5>
-                <p>{artist.info}</p>
-              </div>
-            ))}
+            <div className="slider-card active">
+              <img src={artistData[current].img} alt={artistData[current].name} />
+              <h5>{artistData[current].name}</h5>
+              <button style={{border:"none",padding:"10px 30px",background:"red", color:"white",borderRadius:"5px"}} >{artistData[current].info}</button>
+            </div>
           </div>
         </div>
         <div className="col-1 text-center">
           <button className="slider-arrow" onClick={nextSlide}>→</button>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -1,13 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // 👈 Add this
+import { useNavigate } from "react-router-dom"; // Add this
 import "./BasicDetail.css";
 
 const BasicDetail = () => {
-  const navigate = useNavigate(); // 👈 Initialize navigation
+  const navigate = useNavigate(); //  Initialize navigation
 
   const handleNext = (e) => {
     e.preventDefault(); // form submit se page reload na ho
-    navigate("/PrfoInfo"); // 👈 Ye route par jaayega
+    navigate("/PrfoInfo"); //  Ye route par jaayega
   };
 
   return (

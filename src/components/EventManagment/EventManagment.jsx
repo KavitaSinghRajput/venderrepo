@@ -7,7 +7,7 @@ import em4 from '../EventManagment/4.gif'
 import em5 from '../EventManagment/5.gif'
 import em6 from '../EventManagment/6.gif'
 
-const events = [
+const events = [   
        {
     title: 'Entertainment For Corporate Event',
     link: 'Make It Happen',
@@ -49,7 +49,7 @@ const EventManagement = () => {
 <div className="row heading-row">
           <div className="col-12 text-center">
             <h2 className="main-heading">Event Planner in INDORE</h2>
-            <h1 className="sub-heading">Hire4Event: Event management company</h1>
+            <h1 className="sub-heading">GNVIndia: Event management company</h1>
             <p className="description">
               GNVIndia is a leading top event management company in Indore, offering top-notch
               services for all your event management needs in Madhya Pradesh, including corporate event organising
