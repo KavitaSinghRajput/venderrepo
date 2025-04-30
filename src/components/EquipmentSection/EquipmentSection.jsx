@@ -1,13 +1,14 @@
 import React from 'react';
 import './EquipmentSection.css';
 
+import eq1 from './eqimage/rtr.avif';
+import eq2 from './eqimage/rtr2.jpg';
+import eq3 from './eqimage/rtr3.avif';
+import eq4 from './eqimage/rtr4.avif';
+import eq5 from './eqimage/rtr5.avif';
+
 const EquipmentSection = () => {
-  const equipmentImages = [
-    '/images/equipment1.jpg',
-    '/images/equipment2.jpg',
-    '/images/equipment3.jpg',
-    '/images/equipment4.jpg',
-  ];
+  const equipmentImages = [eq1, eq2, eq3, eq4, eq5];
 
   return (
     <section className="equipment-section">
@@ -23,13 +24,11 @@ const EquipmentSection = () => {
         </p>
 
         <div className="slider-container">
-          <div className="slider-track">
-            {equipmentImages.map((image, index) => (
-              <div className="slide" key={index}>
-                <img src={image} alt={`Equipment ${index + 1}`} />
-              </div>
-            ))}
-          </div>
+          {equipmentImages.map((image, index) => (
+            <div className="slide" key={index}>
+              <img src={image} alt={`Equipment ${index + 1}`} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,11 +1,14 @@
 import React from "react";
 import "./BlogPosts.css";
+import blog from '../../assets/Blog1.jpg';
+import blog1 from '../../assets/blog2.jpg';
+import blog3 from '../../assets/blog3.jpg';
 
 const BlogPosts = () => {
   return (
     <section className="blog-section py-5">
       <div className="container">
-        <div className="text-center mb-5">
+         <div className="text-center mb-5">
           <h2 className="blog-title">
             Latest <span>Blog</span> Posts
           </h2>
@@ -19,7 +22,7 @@ const BlogPosts = () => {
           <div className="col-md-4">
             <div className="blog-card">
               <img
-                src="https://via.placeholder.com/400x250"
+                src={blog}
                 alt="Blog 1"
                 className="img-fluid mb-3"
               />
@@ -39,7 +42,7 @@ const BlogPosts = () => {
           <div className="col-md-4">
             <div className="blog-card">
               <img
-                src="https://via.placeholder.com/400x250"
+                src={blog1}
                 alt="Blog 2"
                 className="img-fluid mb-3"
               />
@@ -59,7 +62,7 @@ const BlogPosts = () => {
           <div className="col-md-4">
             <div className="blog-card">
               <img
-                src="https://via.placeholder.com/400x250"
+                src={blog3}
                 alt="Blog 3"
                 className="img-fluid mb-3"
               />

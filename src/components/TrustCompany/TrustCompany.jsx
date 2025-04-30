@@ -1,30 +1,23 @@
 import React, { useRef, useEffect } from "react";
-import "./TrustCompany.css";
+import "./TrustCompany.css"; 
+import img1 from './images/Atsogo.png';                         
+import img2 from './images/thaleslogo.png';                         
+import img3 from './images/isslogo.png';                         
+import img4 from './images/ishafoundationlogo.png';                         
+import img5 from './images/hikelogo.png';                         
+import img6 from './images/bosslogo.png';                         
+import img7 from './images/amitlogo.png';                         
+                         
 
-const companies = [
-  { img: "/images/ats.png", alt: "ATS" },
-  { img: "/images/nippon.png", alt: "Nippon Steel" },
-  { img: "/images/compunnel.png", alt: "Compunnel" },
-  { img: "/images/zeemedia.png", alt: "Zee Media" },
-  { img: "/images/nayara.png", alt: "Nayara" },
-  { img: "/images/yodley.png", alt: "Yodley" },
-  { img: "/images/ida.png", alt: "Indian Dairy Association" },
-  { img: "/images/samsung.png", alt: "Samsung" },
-  { img: "/images/reap.png", alt: "Reap" },
-  { img: "/images/bose.png", alt: "Bose" },
-  { img: "/images/hike.png", alt: "Hike" },
-  { img: "/images/isha.png", alt: "Isha Foundation" },
-  { img: "/images/argentina.png", alt: "Argentina Ministry" },
-  { img: "/images/sharp.png", alt: "Sharp Travels" },
-  { img: "/images/samkwang.png", alt: "Samkwang" },
-  { img: "/images/nonghyup.png", alt: "Nonghyup Bank" },
-  { img: "/images/addverb.png", alt: "Addverb" },
-  { img: "/images/amity.png", alt: "Amity University" },
-  { img: "/images/aristocrat.png", alt: "Aristocrat" },
-  { img: "/images/ficci.png", alt: "FICCI" },
-  { img: "/images/zee.png", alt: "Zee" },
-  { img: "/images/lg.png", alt: "LG" },
-  { img: "/images/adobe.png", alt: "Adobe" },
+const companies = [    
+  { img: img1, alt: "Atsogo" },
+  { img: img2, alt: "thaleslogo" },
+  { img: img3, alt: "isslogo" },
+  { img: img4, alt: "ishafoundationlogo" },
+  { img: img5, alt: "hikelogo" },   
+  { img: img6, alt: "bosslogo" },
+  { img: img7, alt: "amitlogo" },
+  
 ];
 
 const TrustCompany = () => {

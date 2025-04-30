@@ -5,20 +5,20 @@ const feedbacks = [
   {
     name: "Nithya Iyer",
     role: "Senior Manager BD",
-    feedback: "Thank you, Hire4Event, for making our corporate conference a success! Everything went smoothly, and the team exceeded our expectations. Will definitely use them again!",
-    image: "/assets/user1.png", // sahi path dekh lena
+    feedback: "Thank you,GNVIndia, for making our corporate conference a success! Everything went smoothly, and the team exceeded our expectations. Will definitely use them again!",
+   // sahi path dekh lena
   },
-  {
+  {   
     name: "Akash Chauhan",
     role: "Project Manager",
     feedback: "I have a fabulous experience with this company. They shared valuable tips and tricks for planning successful events under my budget and venue selection. I am very happy to share my experience on Google 👍🏼👍🏼",
-    image: "/assets/user2.png",
+  
   },
   {
     name: "Subhash Tripathi",
     role: "Human Resource Management",
     feedback: "This company team is very good to perform in corporate events and make solutions implemented, and the positive outcomes achieved from previous corporate events.",
-    image: "/assets/user3.png",
+    
   },
 ];
 
@@ -35,7 +35,7 @@ const ClientFeedBack = () => {
             <div className="col-md-4" key={index}>
               <div className="card feedback-card h-100 p-3">
                 <div className="feedback-image text-center mb-3">
-                  <img src={item.image} alt={item.name} className="rounded-circle" />
+                
                 </div>
                 <div className="card-body text-center">
                   <h5 className="card-title">{item.name}</h5>

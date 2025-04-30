@@ -6,8 +6,8 @@ const Login = () => {
     <section className="login-section">
       <div className="container">
         <div className="row align-items-center justify-content-center min-vh-100">
-          <div className="col-md-6">
-            <div className="card p-4 shadow">
+           <div className="col-md-6">
+            <div className="card8 p-4 shadow">
               <div className="card-body">
                 <h2 className="login-title mb-2">Welcome back</h2>
                 <p className="login-subtitle mb-4">Please enter your details</p>
@@ -41,13 +41,13 @@ const Login = () => {
 
                   <div className="d-grid mb-3">
                     <button type="button" className="btn btn-outline-secondary google-btn">
-                      <img
+                      {/* <img
                         src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_%22G%22_Logo.svg"
                         alt="Google Logo"
                         width="20"
                         height="20"
                         className="me-2"
-                      />
+                      /> */}
                       Sign in with Google
                     </button>
                   </div>

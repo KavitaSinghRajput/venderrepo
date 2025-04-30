@@ -51,7 +51,7 @@ const Home = () => {
       <div>
         <ExpertPlanner/>
       </div>
-      <div>
+      <div>  
         <ClientFeedBack/>
       </div>
       <div>

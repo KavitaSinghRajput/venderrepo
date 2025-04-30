@@ -7,13 +7,13 @@ const MyBoard = () => {
       <div className="container">
         {/* First Row */}
         <div className="row align-items-center mb-5">
-          {/* Left Side */}
+           {/* Left Side */}
           <div className="col-md-6 d-flex align-items-center mb-4 mb-md-0">
-            <img
+            {/* <img
               src="https://via.placeholder.com/100"
               alt="Profile Icon"
               className="profile-icon me-3"
-            />
+            /> */}
             <div>
               <h4 className="profile-name mb-1">Profile Name</h4>
               <p className="profile-email mb-0">Email Address</p>
@@ -62,7 +62,7 @@ const MyBoard = () => {
                     <input type="text" className="form-control" id="address" placeholder="Enter your address" />
                   </div>
 
-                  <div className="text-center">
+                  <div className="">
                     <button type="submit" className="btn save-btn">Save Profile</button>
                   </div>
                 </form>
