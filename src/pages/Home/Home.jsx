@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./Home.css"; 
 
 import HeroSection from "../../components/HeroSection/HeroSection";
 import CorporateEventPlanner from "../../components/CorporateEventPlanner/CorporateEventPlanner";
