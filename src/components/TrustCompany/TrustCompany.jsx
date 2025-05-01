@@ -1,23 +1,22 @@
 import React, { useRef, useEffect } from "react";
 import "./TrustCompany.css"; 
-import img1 from './images/Atsogo.png';                         
-import img2 from './images/thaleslogo.png';                         
-import img3 from './images/isslogo.png';                         
-import img4 from './images/ishafoundationlogo.png';                         
-import img5 from './images/hikelogo.png';                         
-import img6 from './images/bosslogo.png';                         
-import img7 from './images/amitlogo.png';                         
-                         
 
-const companies = [    
+import img1 from './images/Atsogo.png';
+import img2 from './images/thaleslogo.png';
+import img3 from './images/isslogo.png';
+import img4 from './images/ishafoundationlogo.png';
+import img5 from './images/hikelogo.png';
+import img6 from './images/bosslogo.png';
+import img7 from './images/amitlogo.png';
+
+const companies = [
   { img: img1, alt: "Atsogo" },
-  { img: img2, alt: "thaleslogo" },
-  { img: img3, alt: "isslogo" },
-  { img: img4, alt: "ishafoundationlogo" },
-  { img: img5, alt: "hikelogo" },   
-  { img: img6, alt: "bosslogo" },
-  { img: img7, alt: "amitlogo" },
-  
+  { img: img2, alt: "Thales" },
+  { img: img3, alt: "ISS" },
+  { img: img4, alt: "Isha Foundation" },
+  { img: img5, alt: "Hike" },
+  { img: img6, alt: "Boss" },
+  { img: img7, alt: "Amit" },
 ];
 
 const TrustCompany = () => {
@@ -31,15 +30,14 @@ const TrustCompany = () => {
     sliderRef.current.scrollBy({ left: 300, behavior: "smooth" });
   };
 
-  // Auto-slide logic
   useEffect(() => {
     const interval = setInterval(() => {
       if (sliderRef.current) {
         sliderRef.current.scrollBy({ left: 200, behavior: "smooth" });
       }
-    }, 3000); // har 3 second baad scroll karega
+    }, 3000);
 
-    return () => clearInterval(interval); // Clean up jab component destroy ho
+    return () => clearInterval(interval);
   }, []);
 
   return (

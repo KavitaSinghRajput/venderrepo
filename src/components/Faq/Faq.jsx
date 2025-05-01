@@ -23,7 +23,7 @@ const Faq = () => {
                 aria-expanded="false"
                 aria-controls="collapseOne"
               >
-                What services does Hire4Event provide?
+                What services does GNVIndia provide?
               </button>
             </h2>
             <div
@@ -33,7 +33,7 @@ const Faq = () => {
               data-bs-parent="#faqAccordion"
             >
               <div className="accordion-body">
-                Hire4Event provides event planning, management, and rental services for corporate, wedding, and social events.
+                GNVIndia provides event planning, management, and rental services for corporate, wedding, and social events.
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Faq = () => {
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                How can I contact Hire4Event?
+                How can I contact GNVIndia?
               </button>
             </h2>
             <div

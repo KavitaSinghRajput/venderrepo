@@ -87,7 +87,7 @@ const BasicDetail = () => {
 
                 <div className="text-start">
                   <button type="submit" className="btn next-btn">
-                    Next <span className="arrow">→</span>
+                    Next 
                   </button>
                 </div>
 

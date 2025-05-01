@@ -60,13 +60,13 @@ const Login = () => {
             </div>
           </div>
 
-          <div className="col-md-6 d-none d-md-block">
+          {/* <div className="col-md-6 d-none d-md-block">
             <img
               src="/path-to-your-image.png"  // <-- Yahan apna purple image ka path daalna
               alt="Login Illustration"
               className="img-fluid login-image"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

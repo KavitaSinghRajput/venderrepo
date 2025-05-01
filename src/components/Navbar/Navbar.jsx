@@ -4,11 +4,11 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  return (   
-    <nav className="navbar  navbar-expand-lg ">
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-white">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src={logo} alt="Gnv logo" style={{ height: "45px" }} />
+          <img src={logo} alt="Gnv logo" />
         </Link>
 
         <button
@@ -24,15 +24,14 @@ function Navbar() {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="#">
+              <Link className="nav-link active" to="/">
                 Home
               </Link>
             </li>
-
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/about">
                 About Us
               </Link>
             </li>
@@ -40,179 +39,81 @@ function Navbar() {
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
+                to="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 VenueBooking
               </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/IndoreCity">
-                    IndoreCity
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    BhopalCity
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    UjjainCity
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    JabalpurCity
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    GwaliorCity
-                  </Link>
-                </li>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/IndoreCity">IndoreCity</Link></li>
+                <li><Link className="dropdown-item" to="#">BhopalCity</Link></li>
+                <li><Link className="dropdown-item" to="#">UjjainCity</Link></li>
+                <li><Link className="dropdown-item" to="#">JabalpurCity</Link></li>
+                <li><Link className="dropdown-item" to="#">GwaliorCity</Link></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
+                to="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 ArtistBooking
               </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/Indore">
-                    Indore
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Bhopal
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Ujjain
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Jabalpur
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Gwalior
-                  </Link>
-                </li>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/Indore">Indore</Link></li>
+                <li><Link className="dropdown-item" to="#">Bhopal</Link></li>
+                <li><Link className="dropdown-item" to="#">Ujjain</Link></li>
+                <li><Link className="dropdown-item" to="#">Jabalpur</Link></li>
+                <li><Link className="dropdown-item" to="#">Gwalior</Link></li>
               </ul>
             </li>
 
-
             <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Event Rental
-              </Link>
+              <Link className="nav-link" to="/rental">Event Rental</Link>
             </li>
-
             <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Event Planner
-              </Link>
+              <Link className="nav-link" to="/planner">Event Planner</Link>
             </li>
 
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
+                to="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
                 Services
               </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Another action
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="#">
-                    Something else here
-                  </Link>
-                </li>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="#">Action</Link></li>
+                <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                <li><Link className="dropdown-item" to="#">Something else here</Link></li>
               </ul>
             </li>
+
             <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Contact Us
-              </Link>
+              <Link className="nav-link" to="/contact">Contact Us</Link>
             </li>
+
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
+                to="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
-                ACCOUNT
+                Account
               </Link>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/login">
-                    Login
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/signup">
-                    Signup
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/Registration">
-                    Vendor Registration
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/MyBoard">
-                    MyDashBoard
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/BasicDetail">
-                    CreateArtistProfile
-                  </Link>
-                </li>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" to="/login">Login</Link></li>
+                <li><Link className="dropdown-item" to="/signup">Signup</Link></li>
+                <li><Link className="dropdown-item" to="/Registration">Vendor Registration</Link></li>
+                <li><Link className="dropdown-item" to="/MyBoard">MyDashboard</Link></li>
+                <li><Link className="dropdown-item" to="/BasicDetail">CreateArtistProfile</Link></li>
               </ul>
             </li>
           </ul>

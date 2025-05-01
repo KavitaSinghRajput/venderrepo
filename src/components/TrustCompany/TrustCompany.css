@@ -1,94 +1,125 @@
 .trust-company-section {
-    background: #866e6e; /* blackish background */
-    padding: 60px 0;
-    color: white;
-  }
-  
+  background: #1f1f1f;
+  padding: 60px 0;
+  color: white;
+}
+
+.trust-company-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.trust-company-section h2 span {
+  color: #e63946;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 160px;
+  height: 100px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #e63946;
+  color: white;
+  border: none;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.arrow:hover {
+  background: #c92030;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
   .trust-company-section h2 {
-    font-size: 36px;
-    font-weight: 700;
-  }     
-  
-  .trust-company-section h2 span {
-    color: #e63946; /* red color */
+    font-size: 28px;
   }
-  
-  .slider-wrapper {
-    position: relative;
-    overflow: hidden;
-    margin-top: 30px;
-  }
-  
-  .slider {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 20px 0;
-  }
-  
-  .slider::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
-  }
-  
+
   .slide {
-    flex: 0 0 auto;
-    width: 150px;
-    height: 100px;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    width: 140px;
+    height: 90px;
   }
-  
-  .slide img {
-    max-width: 100%;
-    max-height: 80%;
-    object-fit: contain;
-  }
-  
+
   .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #e63946;
-    color: white;
-    border: none;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 2;
-    transition: background 0.3s;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
   }
-  
-  .arrow:hover {
-    background: #c92030;
+}
+
+@media (max-width: 576px) {
+  .trust-company-section {
+    padding: 40px 15px;
   }
-  
-  .arrow.left {
-    left: 10px;
+
+  .trust-company-section h2 {
+    font-size: 22px;
+    line-height: 1.4;
   }
-  
-  .arrow.right {
-    right: 10px;
+
+  .slider {
+    gap: 15px;
+    padding: 10px 0;
   }
-  
-  /* Responsive */
- 
-  
-    .arrow {
-      width: 30px;
-      height: 30px;
-      font-size: 18px;
-    }
-    @media (max-width: 768px) {
-        .slide {
-          width: 120px;
-          height: 80px;
-        }
+
+  .slide {
+    width: 120px;
+    height: 80px;
   }
-  
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}

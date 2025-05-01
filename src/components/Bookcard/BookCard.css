@@ -1,68 +1,80 @@
-.card {
-    border-radius: 20px;
-    background-color: #fdfdfd; 
-    border: none;
-    padding: 20px;
-    height: 22rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.bookcard-wrapper {
+  background-color: #fff5f5;
+  margin: 15px 20px;
+}
+
+.card-custom {
+  width: 100%;
+  max-width: 18rem;
+  background-color: #fdfdfd;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.btn-custom {
+  display: inline-block;
+  width: 100%;
+  background-color: #fdeaea;
+  color: #3e2723;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #f9cfcf;
+}
+
+.btn-custom::after {
+  content: "↗";
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #3e2723;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .card-custom {
+    max-width: 100%;
   }
 
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  }
-     
-  .card img {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 0px;
-    object-fit: contain;
-  
+  .card-img {
+    height: 180px;
   }
 
-  
-  .card-title {
-    font-weight: bold;
-    font-size: 1.2rem;
+  .bookcard-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  
-  .card-title span {
-    color: #e53935; 
-  }
-  
-  .card-text {
-    font-size: 0.95rem;
-    color: #444;
-    /* margin: 15px 0; */
-  }
-  
-  .card .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fdeaea;
-    color: #3e2723;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-weight: 500;
-    transition: background 0.3s ease;
-  }
-  
-  .card .btn:hover {
-    background-color: #f9cfcf;
-  }
-  
-  .card .btn::after {
-    content: "↗";
-    margin-left: 10px;
-    font-size: 1rem;
-    color: #3e2723;
-
-  }
-  
-  .ab{
-    margin:"15px 20px";
-  }
+}

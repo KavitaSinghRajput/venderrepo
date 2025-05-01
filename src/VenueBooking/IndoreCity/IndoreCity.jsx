@@ -18,48 +18,48 @@ const hotelvenue = [
     {
     image:img1,
      venue:"brilliant hotel",
-     rating:"4 star",
-     address:"30min",
+     rating:"4.5 star",
+     address:"Plot No 5, near Life Care Hospital, Scheme Number 78, Part II, Scheme 78, Vijay Nagar, Indore, Madhya Pradesh 452010",
     },
 
    {
     image:img2,
    venue:"citrus hotel",
-   rating:"4 star",
-   address:"30min",
+   rating:"5.0 star",
+   address:"No 34-35 F, 34, Vijay Nagar Square, Ratna Lok Colony, Indore, Madhya Pradesh 452010",
    },
 
   {
    image:img3,
    venue:"effotel hotel",
-   rating:"4 star",
-   address:"30min",
+   rating:"4.3 star",
+   address:"Plot No. 10, C/ C.A, Scheme No:94, Sector C, Scheme 94 Sector CA, Indore, Madhya Pradesh 452010",
    },
   {
     image:img4,
    venue:"ginger",
-   rating:"4 star",
-    address:"30min",
+   rating:"3.9 star",
+    address:"AB Rd, near Shaniwar Darpan, Choti Khajrani, Indore, Madhya Pradesh 452008",
    },{
     image:img5,
    venue:"lemon tree hotel",
-   rating:"4 star",
-    address:"30min",
+   rating:"4.0 star",
+    address:"3, RNT Marg, South Tukoganj, Indore, Madhya Pradesh 452001",
    },{
     image:img6,
    venue:"pride hotel",
-   rating:"4 star",
-    address:"30min",
+   rating:"4.1 star",
+    address:"35, PW5H+6VQ, 1, Bicholi Mardana, near pride hotel, Indore, Madhya Pradesh 452016",
    },{
     image:img7,
    venue:"sayajii hotel",
-   rating:"4 star",
-    address:"30min",
+   rating:"4.4 star",
+    address:"H/1, Maguda Nagar, Vijay Nagar, Scheme No 54, Indore, Madhya Pradesh 452010",
    },{
     image:img8,
    venue:"treebo trip phoenix",
-   rating:"4 star",
-    address:"30min",
+   rating:"3 star",
+    address:"25-B, Pipliya Rao Ring Rd, near IT park, Indrapuri Colony, Nanak Nagar, Indore, Madhya Pradesh 452001",
    },
 ]
          
@@ -87,7 +87,7 @@ const hotelvenue = [
         {hotelvenue.map((intex,item) => (
           <div className="col card2" key={item}>
           <img style={{width:"250px",height:"200px"}} src={intex.image} alt="vghghg"  />
-            <h3>Venue Name</h3>
+            <h3 >{intex.venue}</h3>
             <div className="rating">{intex.rating}</div>
             <p><b>address:</b>{intex.address}</p>
             <button>BOOK NOW</button>
