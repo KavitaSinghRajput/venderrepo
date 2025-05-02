@@ -46,7 +46,7 @@ const ExpertPlanner = () => {
                     Event Production and Rental Service
                   </h5>
                   <p className="card-text">
-                    Event Production Company in Delhi, Noida, and Gurgaon
+                    Event Production Company in indore
                   </p>
                   <a href="#" className="btn btn-outline-primary btn-sm">
                     Event Production →
@@ -65,7 +65,7 @@ const ExpertPlanner = () => {
                     Conference & Corporate Planning
                   </h5>
                   <p className="card-text">
-                    Conference Organiser in Delhi, Noida, Gurgaon
+                    Conference Organiser in indore
                   </p>
                   <a href="#" className="btn btn-outline-primary btn-sm">
                     Corporate Events →
@@ -82,7 +82,7 @@ const ExpertPlanner = () => {
                   </div>
                   <h5 className="card-title">Wedding Entertainment</h5>
                   <p className="card-text">
-                    Best Wedding Entertainment services in Delhi, Noida, Gurgaon
+                    Best Wedding Entertainment services in indore
                   </p>
                   <a href="#" className="btn btn-outline-primary btn-sm">
                     Wedding Fun →
@@ -101,8 +101,7 @@ const ExpertPlanner = () => {
                     Team-Building Games for Corporate Events
                   </h5>
                   <p className="card-text">
-                    Team-building Games, Activities organizer in Delhi, Noida,
-                    and Gurgaon
+                    Team-building Games, Activities organizer in Indore
                   </p>
                   <a href="#" className="btn btn-outline-primary btn-sm">
                     Team Games →

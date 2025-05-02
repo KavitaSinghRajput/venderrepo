@@ -26,7 +26,7 @@ const Home = () => {
       </div>
       <div className="container-fluid">
         <Bookcard />
-      </div>
+      </div>     
       <div>
         <EventPlanner />
       </div>

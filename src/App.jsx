@@ -16,11 +16,22 @@ import PrfoInfo from './CreateArtistProfile/PrfoInfo/PrfoInfo'
 import AddInfo from './CreateArtistProfile/AddInfo/AddInfo'
 import MediaUpload from './CreateArtistProfile/MediaUpload/MediaUpload'
 import EditArtistProfile from './CreateArtistProfile/EditArtistProfile/EditArtistProfile'
+import TopNavbar from './components/TopNavbar/TopNavbar'
+import SocialSidebar from './components/SocialSidebar/SocialSidebar'
+import ContactWidget from './components/ContactWidget/ContactWidget'
+import SearchArtistButton from './components/SearchArtistButton/SearchArtistButton'
+import ScrollUpBar from './components/ScrollUpBar/ScrollUpBar'
+
 function App() {
   return (
     <>
      <Router>
+     <TopNavbar />    
       <Navbar />     
+      <SocialSidebar />
+      <ContactWidget />
+      <SearchArtistButton />
+      <ScrollUpBar />
          <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/login" element={<Login />} />
