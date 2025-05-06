@@ -26,7 +26,7 @@ const ScrollUpBar = () => {
     <div className={`scroll-up-bar ${scrollUp ? 'expand' : 'shrink'}`}>
       <div className="scrolling-text">
         <span className='text-center'>
-          Expert Event Planning Services in Delhi, Mumbai, Gurgaon, Noida – Conferences, Corporate Events, Weddings & More – Hire4Event Delivers Excellence
+         Event Planning Services in Indore, Bhopal, Ujjain, Gwalior – Conferences, Corporate Events,
         </span>
       </div>
     </div>

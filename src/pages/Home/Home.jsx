@@ -17,8 +17,8 @@ import Faq from "../../components/Faq/Faq";
 import BlogPosts from "../../components/BlogPost/BlogPosts";
 import OnlineBooking from "../../components/OnlineBooking/OnlineBooking";
 
-const Home = () => {
-  return (
+const Home = () => {   
+  return (   
     <div className="container-fluid" style={{ padding: "0px" }}>
       <HeroSection />
       <div>
@@ -69,7 +69,7 @@ const Home = () => {
 
 export default Home;
 
-
+  
 
 
 

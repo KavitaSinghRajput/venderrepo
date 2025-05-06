@@ -8,8 +8,8 @@
 .navbar-brand img {
   height: 45px;
   object-fit: contain;
-}
-
+}    
+    
 .navbar-nav {
   gap: 10px;
 }
@@ -41,7 +41,12 @@
 .dropdown-item:hover {
   background-color: #f7f7f7;
 }
-
+    
+.btncust{
+   color: white !important;
+   padding: 10px 15px !important;
+   border-radius: 2px;
+}
 
 
 /* ✅ Responsive hamburger tweaks */

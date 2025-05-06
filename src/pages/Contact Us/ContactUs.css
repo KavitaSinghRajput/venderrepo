@@ -1,0 +1,33 @@
+.contact-hero {
+  background: linear-gradient(to bottom, #7f0000, #000000);
+}
+
+.card h5 {
+  font-weight: 600;
+}
+
+.social-icons i {
+  font-size: 1.6rem;
+  color: #d10000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #000;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  background-color: #fefefe;
+  border-color: #d10000;
+}
+.card:hover {
+  cursor: pointer;
+}

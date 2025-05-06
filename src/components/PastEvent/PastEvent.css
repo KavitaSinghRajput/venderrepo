@@ -1,23 +1,37 @@
-.card-slider-container {
-    overflow-x: auto;
-    padding: 20px;
-  }
-  
-  .card-slider {
-    display: flex;
-    gap: 20px;
-    scroll-snap-type: x mandatory; 
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .card {
-    flex: 0 0 auto;
-    width: 250px;
-    height: auto;
-    background: white;
-    border-radius: 54px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    scroll-snap-align: start; 
-    padding: 15px;
-  }
-   
+.past-event-section {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.event-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.event-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.event-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.card-text {
+  color: #6c757d;
+}

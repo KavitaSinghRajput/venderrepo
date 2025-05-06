@@ -9,7 +9,7 @@ const CorporateEventPlanner = () => {
         <div className="row">
           <div className="col-md-12 OOSHeader06 no-padding no-margin">
             <p className="PatternServices">
-             <h2> Corporate <span>Event Planner</span> in INDORE</h2> 
+              <h2> CORPORATE <span style={{color:"red"}}>EVENT PLANNER</span> IN INDORE</h2> 
             </p>
             <br />
             <p className="OOSShortDesc06">

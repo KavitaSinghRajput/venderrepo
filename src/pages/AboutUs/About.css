@@ -1,0 +1,37 @@
+.about-section {
+  background-color: #fff;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+.highlight {
+  color: #e01010;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.about-stat {
+  font-size: 26px;
+  font-weight: bold;
+  color: #b20000;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+}

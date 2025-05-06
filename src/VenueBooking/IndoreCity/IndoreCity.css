@@ -1,77 +1,59 @@
-.indoreCity-page {
-    padding: 20px;
+.card2 {
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.animated-btn {
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.animated-btn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rating i {
+  animation: pulseStar 1.5s infinite;
+}
+
+@keyframes pulseStar {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.venue-card {
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.venue-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+}
+
+.venue-card.active {
+  border: 2px solid #dc3545;
+  background-color: #ffe6e6;
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(220, 53, 69, 0.5);
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  .indoreCity-page .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+  50% {
+    transform: scale(1.05);
   }
-  
-  .indoreCity-page .col {
-    flex: 1;
-    padding: 15px;
+  100% {
+    transform: scale(1.03);
   }
-  
-  .indoreCity-page .first-row .left-col {
-    flex: 1;
-  }
-  
-  .indoreCity-page .first-row .right-col {
-    flex: 1;
-  }
-  
-  .indoreCity-page .card-row2 {
-    gap: 20px;
-  }
-  
-  .indoreCity-page .card2 {
-    background-color: #ffecec;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 20px;
-    flex: 1 1 calc(25% - 20px);
-    max-width: calc(25% - 20px);
-  }
-  
-  .indoreCity-page .card2 h3 {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  
-  .indoreCity-page .rating {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .indoreCity-page .card2 p {
-    margin-bottom: 15px;
-  } 
-  
-  .indoreCity-page .card2 button {
-    background-color: white;
-    color: red;
-    border: 1px solid red;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .indoreCity-page .card button:hover {
-    background-color: red;
-    color: white;
-  }
-  
-  @media (max-width: 768px) {
-    .indoreCity-page .card {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
-  
-    .indoreCity-page .first-row {
-      flex-direction: column;
-    }
-  }
-  
+}

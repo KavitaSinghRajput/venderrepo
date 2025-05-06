@@ -1,0 +1,68 @@
+.hero-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  
+  .filter-bar select,
+  .filter-bar button {
+    min-width: 180px;
+  }
+  
+  .artist-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-sidebar .list-group-item {
+    font-size: 14px;
+    padding: 10px 12px;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  
+  .category-sidebar .list-group-item:hover {
+    background-color: #f8f9fa;
+    font-weight: 500;
+  }
+  
+  .how-it-works-section {
+    background: #f4f8fb;
+  }
+  
+  .how-it-works-section ol li {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+  
+  .client-logos img {
+    max-height: 50px;
+    transition: filter 0.3s ease;
+  }
+  
+  .grayscale-logo {
+    filter: grayscale(100%);
+  }
+  
+  .grayscale-logo:hover {
+    filter: none;
+  }
+  
+  .seo-text-section {
+    line-height: 1.8;
+    font-size: 15px;
+  }
+  
+  .seo-text-section h6 {
+    color: #212529;
+  }
+  
+  .seo-text-section button {
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 4px;
+  }
+  
