@@ -52,22 +52,22 @@ function Navbar() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/BhopalCity">
                     BhopalCity
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/UjjainCity">
                     UjjainCity
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/JabalpurCity">
                     JabalpurCity
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="/GwaliorCity">
                     GwaliorCity
                   </Link>
                 </li>
@@ -113,12 +113,12 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/rental">
+              <Link className="nav-link" to="/Eventrental">
                 Event Rental
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/planner">
+              <Link className="nav-link" to="/EventPlanner">
                 Event Planner
               </Link>
             </li>
@@ -141,7 +141,7 @@ function Navbar() {
               </Link>
             </li>
 
-            {/* <li className="nav-item dropdown">
+             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
                 to="#"
@@ -177,7 +177,7 @@ function Navbar() {
                   </Link>
                 </li>
               </ul>
-            </li> */}
+            </li> 
 
 
           </ul>

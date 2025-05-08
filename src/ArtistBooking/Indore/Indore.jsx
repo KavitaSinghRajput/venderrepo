@@ -11,7 +11,7 @@ import image7 from  '../../ArtistBooking/Indore/assets1/asad khan.jpeg'
 import image8 from  '../../ArtistBooking/Indore/assets1/paridhi sharma.jpeg'
 
 const Indore = () => {
-
+  
    const artistprofile = [ 
   {
         image:image1,

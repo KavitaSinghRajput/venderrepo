@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'; // ✅ Step 1: Import useNavigat
 const Jabalpur = () => {
   useEffect(() => {
     AOS.init({ duration: 800 });
-  }, []);
+  }, []);  
 
   const navigate = useNavigate(); // ✅ Step 2: Initialize navigate
 

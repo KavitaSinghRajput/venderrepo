@@ -26,10 +26,17 @@ import Gwalior from './ArtistBooking/Gwalior/Gwalior';
 import Jabalpur from './ArtistBooking/Jabalpur/Jabalpur';
 import Ujjain from './ArtistBooking/Ujjain/Ujjain';
 import Comedians from './ArtistBooking/Bhopal/Comedians';  
-
 import ArtistDetail from './ArtistBooking/Bhopal/ArtistDetail';
 
-import IndoreCity from './VenueBooking/IndoreCity/IndoreCity'
+import IndoreCity from './VenueBooking/IndoreCity/IndoreCity';
+import BhopalCity from './VenueBooking/BhopalCity/BhopalCity';
+ import JabalpurCity from './VenueBooking/JabalpurCity/JabalpurCity';
+import GwaliorCity from './VenueBooking/GwaliorCity/GwaliorCity';
+import UjjainCity from './VenueBooking/UjjainCity/UjjainCity';
+
+
+
+
 
 import BasicDetail from './CreateArtistProfile/BasicDetail/BasicDetail'
 import PrfoInfo from './CreateArtistProfile/PrfoInfo/PrfoInfo'
@@ -42,7 +49,8 @@ import ContactWidget from './components/ContactWidget/ContactWidget'
 import SearchArtistButton from './components/SearchArtistButton/SearchArtistButton'
 import ScrollUpBar from './components/ScrollUpBar/ScrollUpBar'
 import Services from './pages/Services/Services';
-
+import Eventrental from './pages/Event Rental/Eventrental';
+import EventPlanner from './pages/Event Planner/Eventplanner';
 import ContactUs from './pages/Contact Us/ContactUs';
 
 
@@ -64,6 +72,8 @@ function App() {
          <Route path="/signup" element={<Signup />} />
 
          <Route path="/ContactUs" element={<ContactUs/>}/>
+         <Route path="/Eventrental" element={<Eventrental/>}/>
+         <Route path="/EventPlanner" element={<EventPlanner/>}/>
 
        
          <Route path="/Registration" element={<VendorRegistration />} />
@@ -78,6 +88,10 @@ function App() {
          <Route path="/ArtistDetail" element={<ArtistDetail/>}/>
         
          <Route path="/IndoreCity" element={<IndoreCity/>}/>
+         <Route path="/BhopalCity" element={<BhopalCity/>}/>
+         <Route path="/GwaliorCity" element={<GwaliorCity/>}/>
+         <Route path="/JabalpurCity" element={<JabalpurCity/>}/> 
+         <Route path="/UjjainCity" element={<UjjainCity/>}/>  
          <Route path="/EventPopup" element={<EventPopup/>}/>
 
          
@@ -89,8 +103,8 @@ function App() {
          
         </Routes>
         <Footer/> 
-    </Router>
-    </>
+      </Router>
+      </>
 
 
 

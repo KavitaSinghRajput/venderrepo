@@ -1,37 +1,40 @@
-.about-section {
-  background-color: #fff;
+ .hero-section {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/hero-bg.jpg") center/cover no-repeat;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .about-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #111;
+  font-size: 2rem;
+  font-weight: bold;  
 }
 
 .highlight {
-  color: #e01010;
+  color: #dc3545;
 }
 
-.about-text {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.7;
-  margin-top: 10px;
+.logo-card {
+  border-radius: 12px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 10px;
+  transition: transform 0.3s ease;
 }
 
-.about-img {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+.logo-card:hover {
+  transform: scale(1.05);
 }
 
-.about-stat {
-  font-size: 26px;
-  font-weight: bold;
-  color: #b20000;
-}
-
-.stat-label {
-  font-size: 14px;
-  color: #666;
-}
+.logo-img {
+  max-height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+} 
+  
