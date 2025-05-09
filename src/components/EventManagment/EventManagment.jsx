@@ -13,7 +13,7 @@ const events = [
     link: 'Make It Happen',
     img: em1
   },
-  {
+  {  
     title: 'Exhibition Organiser',
     link: 'Plan Your Showcase',
     img: em2
@@ -44,10 +44,10 @@ const EventManagement = () => {
   return (
 
 
-    <div className="container event-management-container">
-
-<div className="row heading-row">
-          <div className="col-12 text-center">
+            <div className="container event-management-container">
+            
+            <div className="row heading-row">
+            <div className="col-12 text-center">
             <h2 className="main-heading">Event Planner in INDORE</h2>
             <h1 className="sub-heading">GNVIndia: Event management company</h1>
             <p className="description">

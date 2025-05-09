@@ -10,16 +10,16 @@
     transition: transform 0.3s ease;
     margin: 0px 40px ;
     height: 100%;
-  }
+  }   
   
   .event-card:hover {
     transform: translateY(-8px);
   }
   
   .event-img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 15px;
+    width: 80px;
+    height: 70px;
+    margin-bottom: 20px;
   }
   
   .event-title {

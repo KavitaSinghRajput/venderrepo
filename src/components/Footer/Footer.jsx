@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="footer-section">
-      <div className="container">
+      <div className="container-fluid">
         {/* Row 1 - Title and Description */}
         <div className="row mb-5">
           <div className="col-12 text-center">
@@ -183,7 +183,8 @@ const Footer = () => {
           </div>
         </div>
          {/* Row 2 - Bottom Bar */}
-        <div className="row bottom-bar align-items-center">
+         <div className="container-fluid bg-white">
+        <div className="row bottom-bar  align-items-center">
           <div className="col-md-4 text-start">
             <p>©Copyright 2023–2025 All Rights Reserved</p>
           </div>
@@ -196,6 +197,7 @@ const Footer = () => {
             <p className="designed-by">Designed by <span>GNVIndia IT Team</span></p>
           </div>
         </div>
+         </div>
          </div>
     </footer>
   );
