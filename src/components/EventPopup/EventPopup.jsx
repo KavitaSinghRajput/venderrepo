@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import "./EventPopup.css";
 
 const EventPopup = () => {
-  const [show, setShow] = useState(true); // Show popup immediately
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow(true);
+    }, 3000); // Show after 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleClose = () => setShow(false);
 
@@ -16,6 +24,9 @@ const EventPopup = () => {
       className="event-modal"
       backdrop="static"
     >
+      {/* 👇 Close button area */}
+      <Modal.Header closeButton className="border-0 pb-0" />
+
       <Modal.Body className="d-flex flex-column flex-md-row p-0">
         <div className="p-4 flex-fill bg-white">
           <h4 className="modal-title">

@@ -113,7 +113,13 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/Eventrental">
+              <Link className="nav-link" to="/VolunteerBooking">
+                VolunteerBooking
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/EventRental">
                 Event Rental
               </Link>
             </li>
@@ -134,14 +140,14 @@ function Navbar() {
                 Contact Us
               </Link>
             </li>
-
+{/* 
             <li className="nav-item">
               <Link className="nav-link btn-primary btncust" to="/EventPopup">
                 Plan Your Event
               </Link>
-            </li>
+            </li> */}
 
-             <li className="nav-item dropdown">
+              <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
                 to="#"
@@ -177,7 +183,7 @@ function Navbar() {
                   </Link>
                 </li>
               </ul>
-            </li> 
+            </li>  
 
 
           </ul>

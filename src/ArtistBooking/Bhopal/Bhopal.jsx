@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Bhopal.css';
-import { useNavigate } from 'react-router-dom'; // ✅ Step 1: Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 const Bhopal = () => {
   useEffect(() => {
@@ -11,7 +11,7 @@ const Bhopal = () => {
 
   const navigate = useNavigate(); // ✅ Step 2: Initialize navigate
 
-  const artistData = [
+  const artistData = [  
     {
       title: "Book The Best Live Band For Events And Weddings In Bhopal",
       artists: [

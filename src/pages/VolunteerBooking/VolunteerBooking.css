@@ -1,20 +1,20 @@
-.artist-header {
+    .volunteer-header {
     background: linear-gradient(to right, #7f0000, #c40000);
     color: white;
   }
   
-  .artist-card {
+  .volunteer-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 12px;
     overflow: hidden;
   }
   
-  .artist-card:hover {
+  .volunteer-card:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   
-  .artist-card img {
+  .volunteer-card img {
     height: 180px;
     object-fit: cover;
     width: 100%;

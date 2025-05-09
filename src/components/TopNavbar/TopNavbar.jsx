@@ -7,8 +7,8 @@ const TopNavbar = () => {
     <div className="top-navbar py-2 px-3  ">
       <div className="container-fluid d-flex flex-wrap justify-content-between align-items-center">
         <div className="d-flex align-items-center gap-3 flex-wrap text-dark contact-info">
-          <span><i className="bi bi-envelope me-1"></i>events@gnvindia.in </span>
-          <span><i className="bi bi-headset me-1"></i>+91-9691474449 </span>
+  <span><i className="bi bi-envelope me-2 text-primary"></i>events@gnvindia.in</span>
+         <span><i className="bi bi-telephone me-2 text-success"></i>+91-9691474449</span>
         </div>
 
         {/* <div className="d-flex align-items-center gap-2 flex-wrap">

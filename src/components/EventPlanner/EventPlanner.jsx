@@ -4,7 +4,7 @@ import ep1 from "../EventPlanner/EPP1.webp";
 import ep2 from "../EventPlanner/EPP2.webp";
 import ep3 from "../EventPlanner/EPP3.webp";
 
-export default function EventPlanner() {
+ function EventPlanner() {
   return (
     <div className="container-fluid event-planner-container py-5">
       <div className="row align-items-center">
@@ -57,3 +57,4 @@ export default function EventPlanner() {
     </div>
   );
 }
+export default EventPlanner;

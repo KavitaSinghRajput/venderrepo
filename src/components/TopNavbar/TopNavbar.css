@@ -1,40 +1,138 @@
 .top-navbar {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    font-size: 14px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.top-navbar .contact-info span {
+  font-weight: 500;
+}
+
+.top-navbar a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-navbar a:hover {
+  text-decoration: underline;
+}
+
+.btn-job,
+.btn-artist {
+  background-color: #d42317;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 4px 12px;
+  border: none;
+}
+
+.btn-account {
+  background: linear-gradient(to right, #fd6b2c, #ff9d00);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 4px 12px;
+  border: none;
+}
+
+/* TopNavbar.css */
+
+.contact-info span {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: slideFadeIn 1s ease forwards;
+}
+
+.contact-info span:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.contact-info span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+
+/* TopNavbar.css */
+
+/* Slide & Fade animation */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  
-  .top-navbar .contact-info span {
-    font-weight: 500;
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .top-navbar a {
-    color: #212529;
-    text-decoration: none;
-    font-weight: 500;
-  }  
-  
-  .top-navbar a:hover {
-    text-decoration: underline;
+}
+
+/* Contact Info Animation */
+.contact-info span {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: slideFadeIn 1s ease forwards;
+}
+
+.contact-info span:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.contact-info span:nth-child(2) {
+  animation-delay: 0.7s;
+}
+
+/* Social Icons Animation */
+.social-icons a,
+.social-icons .btn-account {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: slideFadeIn 1s ease forwards;
+}
+
+.social-icons a:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.social-icons a:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.social-icons a:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.social-icons a:nth-child(4) {
+  animation-delay: 1.6s;
+}
+
+.social-icons .btn-account {
+  animation-delay: 1.8s;
+}
+
+/* Optional hover effect */
+.social-icons a,
+.btn-account {
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover,
+.btn-account:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .btn-job,
-  .btn-artist {
-    background-color: #d42317;
-    color: #fff;
-    font-weight: 600;
-    font-size: 13px;
-    padding: 4px 12px;
-    border: none;
-  }
-  
-  .btn-account {
-    background: linear-gradient(to right, #fd6b2c, #ff9d00);
-    color: #fff;
-    font-weight: 700;
-    font-size: 13px;
-    padding: 4px 12px;
-    border: none;
-  }
-  
-  
+}
