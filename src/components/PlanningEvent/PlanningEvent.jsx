@@ -36,13 +36,13 @@ const PlanningEvent = () => {
           </div>
         </div>
 
-        <div className="buttons">
+        {/* <div className="buttons">
           <button className="search-artist">Search Artist</button>
           <button className="expert-planning">Expert Event Planning Services in Indore,Ujjain, Bhopal,</button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
 };
-
+  
 export default PlanningEvent;

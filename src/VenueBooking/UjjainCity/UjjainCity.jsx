@@ -4,14 +4,12 @@
     import 'aos/dist/aos.css';
     import '@fortawesome/fontawesome-free/css/all.min.css';
     
-    import img1 from '../../VenueBooking/IndoreCity/assets2/gh.jpeg';
-     import img2 from '../../VenueBooking/IndoreCity/assets2/citrus hotel.jpeg';
-     import img3 from '../../VenueBooking/IndoreCity/assets2/effotel hotel.jpeg';
-     import img4 from '../../VenueBooking/IndoreCity/assets2/ginger.jpeg';
-     import img5 from '../../VenueBooking/IndoreCity/assets2/lemon tree hotel.jpeg';
-     import img6 from '../../VenueBooking/IndoreCity/assets2/pride hotel.jpeg';
-     import img7 from '../../VenueBooking/IndoreCity/assets2/sayajii hotel.jpeg';
-     import img8 from '../../VenueBooking/IndoreCity/assets2/treebo trip phoenix.jpeg';
+    import img1 from '../../VenueBooking/UjjainCity/assets23/imperialhotel.avif';
+    import img2 from '../../VenueBooking/UjjainCity/assets23/mittalevenue.jpg';
+    import img3 from '../../VenueBooking/UjjainCity/assets23/mpt.avif';
+    import img4 from '../../VenueBooking/UjjainCity/assets23/solitarehotel.jpg';
+    import img5 from '../../VenueBooking/UjjainCity/assets23/vikramaditya.jpg';
+     
     
     const UjjainCity = () => {
       useEffect(() => {
@@ -22,14 +20,12 @@
       const handleClick = (i) => setSelected(i);
     
       const venues = [
-          { image: img1, venue: "Brilliant Hotel", rating: "4.5", address: "Plot No 5, Vijay Nagar" },
-         { image: img2, venue: "Citrus Hotel",   rating: "5.0", address: "Vijay Nagar Square"   },
-         { image: img3, venue: "Effotel Hotel",  rating: "4.3", address: "Scheme 94 CA"         },
-         { image: img4, venue: "Ginger",         rating: "3.9", address: "Choti Khajrani"       },
-         { image: img5, venue: "Lemon Tree",     rating: "4.0", address: "South Tukoganj"       },
-         { image: img6, venue: "Pride Hotel",    rating: "4.1", address: "Bicholi Mardana"      },
-         { image: img7, venue: "Sayaji Hotel",   rating: "4.4", address: "Maguda Nagar"         },
-         { image: img8, venue: "Treebo Phoenix", rating: "3.0", address: "Nanak Nagar"          },
+          { image: img1, venue: "imperialhotel", rating: "4.5", address: "3687/1 Near over bridge Hari Phatak indore road, imperial square, Ujjain, Madhya Pradesh 456010" },
+         { image: img2, venue: "mittalevenue",   rating: "5.0", address: "Ring Road, near CHL Hospital, Nanakheda, Rishi Nagar, Ujjain, Sawara Khedi, Madhya Pradesh 456010"   },
+         { image: img3, venue: "mpt",             rating: "4.3",address: "University Road Infront Of, Madhav Club Rd, Ujjain, Madhya Pradesh 456010•0734 255 5687"         },
+         { image: img4, venue: "solitarehotel",   rating: "3.9", address: "Chintaman Road, Jaysinghpura, near Jantar Mantar, infront of Gyan Sagar Girls Academy, Ujjain, Madhya Pradesh 456001"       },
+         { image: img5, venue: "vikramaditya",     rating: "4.0", address: "81/1, chouraha, near, Ring Road, Ujjain, Madhya Pradesh 456001"       },
+        
       ];
     
       return (
@@ -44,6 +40,7 @@
               data-aos="fade-down"
               data-aos-duration="1000"
               data-aos-delay="200"
+                style={{color:"white"}}
             >
               Book Top <span className="highlight">Venues in UjjainCity</span>
             </h2>
@@ -52,6 +49,7 @@
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="400"
+                style={{color:"white"}}
               
             >
              Looking To Book The Best Venues In ujjainCity for your Next Event? GNVIndia offers A Seamless Venue Booking Experience For Corporate Events, Weddings, Exhibitions, And Private Parties. Choose From Our Extensive Network Of Banquet Halls, Luxury Hotels, Outdoor Lawns, Resorts, And Convention Centers To Make Your Event Truly Special.
@@ -94,4 +92,4 @@
     };
     
     export default UjjainCity;
-    
+      

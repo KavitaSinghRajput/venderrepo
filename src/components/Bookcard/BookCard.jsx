@@ -11,7 +11,7 @@ import corporateteambuilding from './assets3/corporateteambuilding.jpg';
 export default function BookCard() {
   const cardData = [
     {
-      img: OrganizeConference,
+      img: OrganizeConference, 
       title: "Organize Conference",
       text: "Host a flawless conference! Our expert planning ensures smooth execution.",
       btn: "Start Planning",
@@ -49,7 +49,7 @@ export default function BookCard() {
   ];
 
   return (
-    <div className="container-fluid bookcard-wrapper py-5">
+    <div style={{margin:"0px"}} className="container-fluid bookcard-wrapper py-5">
       <div className="row px-md-5 px-3">
         {cardData.map((card, index) => (
           <div

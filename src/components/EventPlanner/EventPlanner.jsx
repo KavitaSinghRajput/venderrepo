@@ -8,12 +8,12 @@ import ep3 from "../EventPlanner/EPP3.webp";
   return (
     <div className="container-fluid event-planner-container py-5">
       <div className="row align-items-center">
-        {/* LEFT: Image Gallery Section */}
-        <div className="col-lg-6">
+        {/* LEFT: Image Gallery Section */} 
+        <div style={{paddingLeft:"50px",paddingRight:"50px"}} className="col-lg-6"> 
           <div className="past-events">
-            <div className="row g-3 justify-content-center">
+            <div className="row  justify-content-center">
               {[ep1, ep2, ep3].map((img, i) => (
-                <div key={i} className="col-12 col-md-4">
+                <div key={i} style={{padding:"0px"}} className="col-12 col-md-4">
                   <div className="event-card">
                     <img src={img} alt={`Event ${i + 1}`} className="img-fluid" />
                   </div>

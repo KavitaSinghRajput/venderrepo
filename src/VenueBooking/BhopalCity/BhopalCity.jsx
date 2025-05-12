@@ -4,14 +4,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import img1 from '../../VenueBooking/IndoreCity/assets2/gh.jpeg';
-import img2 from '../../VenueBooking/IndoreCity/assets2/citrus hotel.jpeg';
-import img3 from '../../VenueBooking/IndoreCity/assets2/effotel hotel.jpeg';
-import img4 from '../../VenueBooking/IndoreCity/assets2/ginger.jpeg';
-import img5 from '../../VenueBooking/IndoreCity/assets2/lemon tree hotel.jpeg';
-import img6 from '../../VenueBooking/IndoreCity/assets2/pride hotel.jpeg';
-import img7 from '../../VenueBooking/IndoreCity/assets2/sayajii hotel.jpeg';
-import img8 from '../../VenueBooking/IndoreCity/assets2/treebo trip phoenix.jpeg';
+import img1 from '../../VenueBooking/BhopalCity/assets20/cotyard.jpg';
+import img2 from '../../VenueBooking/BhopalCity/assets20/lakeview.jpg';
+import img3 from '../../VenueBooking/BhopalCity/assets20/jahannuma.webp';
+import img4 from '../../VenueBooking/BhopalCity/assets20/sabhapalce.webp';
+import img5 from '../../VenueBooking/BhopalCity/assets20/rajabhoj.webp';
+
 
 const BhopalCity = () => {
   useEffect(() => {
@@ -22,15 +20,13 @@ const BhopalCity = () => {
   const handleClick = (i) => setSelected(i);
 
   const venues = [
-    { image: img1, venue: "Brilliant Hotel", rating: "4.5", address: "Plot No 5, Vijay Nagar" },
-    { image: img2, venue: "Citrus Hotel",   rating: "5.0", address: "Vijay Nagar Square"   },
-    { image: img3, venue: "Effotel Hotel",  rating: "4.3", address: "Scheme 94 CA"         },
-    { image: img4, venue: "Ginger",         rating: "3.9", address: "Choti Khajrani"       },
-    { image: img5, venue: "Lemon Tree",     rating: "4.0", address: "South Tukoganj"       },
-    { image: img6, venue: "Pride Hotel",    rating: "4.1", address: "Bicholi Mardana"      },
-    { image: img7, venue: "Sayaji Hotel",   rating: "4.4", address: "Maguda Nagar"         },
-    { image: img8, venue: "Treebo Phoenix", rating: "3.0", address: "Nanak Nagar"          },
-  ];
+    { image: img1, venue: "Cotyard Merriot Hotel", rating: "4.5", address: "DB City-Area Hills Bhopal,462011 India" },
+    { image: img2, venue: "Hotel lake View",       rating: "5.0", address: "Shyamla Hills,Bhopal-462013"   },
+    { image: img3, venue: "Jahan Numa Hotel",      rating: "4.3", address: "157,Shamala Hills,Bhopal-462013"         },
+    { image: img4, venue: "Noor Us Sabha Palace",   rating: "3.9", address: "VIP Road,Koh-e-fiza,Bhopal 462001"       },
+    { image: img5, venue: "Raja Bhoj Hotel",        rating: "4.0", address: "Opposite Of Peoples Group Bhanpur,Bhopal"       },
+    
+ ];
 
   return (
     <div className="bhopal-page">
@@ -44,15 +40,16 @@ const BhopalCity = () => {
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-delay="200"
-        >
+         style={{color:"white"}}
+         >
           Book Top <span className="highlight">Venues In BhopalCity</span>
         </h2>
         <p
           className="hero-subtitle"
-          data-aos="fade-up"
+          data-aos="fade-up"  
           data-aos-duration="1000"
           data-aos-delay="400"
-          
+          style={{color:"white"}}
         >
          Looking To Book The Best Venues In BhopalCity for your Next Event? GNVIndia offers A Seamless Venue Booking Experience For Corporate Events, Weddings, Exhibitions, And Private Parties. Choose From Our Extensive Network Of Banquet Halls, Luxury Hotels, Outdoor Lawns, Resorts, And Convention Centers To Make Your Event Truly Special.
         </p>
@@ -89,7 +86,7 @@ const BhopalCity = () => {
           ))}
         </div>
       </div>
-    </div>
+    </div>   
   );
 };
 

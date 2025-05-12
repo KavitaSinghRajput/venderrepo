@@ -53,7 +53,7 @@
 import React from 'react';
 import './SocialSidebar.css';
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
-import { useScrollTrigger } from './ScrollTrigger'; // 👈
+import { useScrollTrigger } from '../ScrollTriger/ScrollTrigger'; // 👈
 
 const SocialSidebar = () => {
   const showSidebar = useScrollTrigger(); // 👈

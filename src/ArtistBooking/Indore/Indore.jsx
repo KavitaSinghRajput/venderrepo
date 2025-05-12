@@ -1,97 +1,85 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Indore.css';
-import image1 from  '../../ArtistBooking/Indore/assets1/boby chorasiya.jpeg'
-import image2 from  '../../ArtistBooking/Indore/assets1/ansh bhawser.jpg'
-import image3 from  '../../ArtistBooking/Indore/assets1/oyye indori.jpeg'
-import image4 from  '../../ArtistBooking/Indore/assets1/zakirkhan.jpeg'
-import image5 from  '../../ArtistBooking/Indore/assets1/rahul jain.jpg'
-import image6 from  '../../ArtistBooking/Indore/assets1/ankita lokhande.webp'
-import image7 from  '../../ArtistBooking/Indore/assets1/asad khan.jpeg'
-import image8 from  '../../ArtistBooking/Indore/assets1/paridhi sharma.jpeg'
+import { useNavigate } from 'react-router-dom'; // ✅ Step 1: Import useNavigate
+
+import artist1 from '../../ArtistBooking/Indore/assets1/artist1.webp';
+import artist2 from '../../ArtistBooking/Indore/assets1/artist2.jpg';
+import artist3 from '../../ArtistBooking/Indore/assets1/artist3.jpeg';
+import artist4 from '../../ArtistBooking/Indore/assets1/artist4.jpeg';
+
+
+
 
 const Indore = () => {
-  
-   const artistprofile = [ 
-  {
-        image:image1,
-        artist:"Boby chorasiya",
-        rating:"4 star",
-        time:"30min",
-  },
-       
-       {  image:image2,
-        artist:"Ansh bhawser",
-        rating:"4 star",
-        time:"30min",
-       },
-       {  image:image3,
-        artist:"oyye indori",
-        rating:"4 star",
-        time:"30min",
-       },
-       {  image:image4,
-        artist:"zakir Khan",
-        rating:"5 star",
-        time:"30min",
-       },
-       {  image:image5,
-        artist:"rahul jain",
-        rating:"4 star",
-        time:"30min",
-       },
-      
-      
-       {  image:image6,
-        artist:"ankita lokhande",
-        rating:"4 star",
-        time:"30min",
-       },   
-       {  image:image7,
-        artist:"asad khan",
-        rating:"4 star",
-        time:"30min",
-       },
-       {  image:image8,
-        artist:"paridhi sharma",
-        rating:"5 star",
-        time:"30min",
-       },
-       
-   ]
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
 
+  const navigate = useNavigate(); // ✅ Step 2: Initialize navigate
 
+  const artistData = [
+    {
+      title: "Book The Best Live Band For Events And Weddings In Bhopal",
+      artists: [
+        { name: "Ankita Lokhande", image: artist1, rating: "4.5★", reviews: "1010", duration: "70-120 Mins" },
+        { name: "Ansh Bhawser", image: artist2, rating: "4.6★", reviews: "1375", duration: "80-120 Mins" },
+        { name: "Asad Khan", image: artist3, rating: "4.4★", reviews: "1578", duration: "37-120 Mins" },
+        { name: "Boby Chorasiya", image: artist4, rating: "4.6★", reviews: "1027", duration: "90-100 Mins" }
+      ]
+    },
+    
+   
+   
+  ];
 
   return (
-    <div className="indore-page">
-   
-      <div className="row first-row">
-        <div className="col left-col text-center ">
-          <h2>Book Top Artists In Indore – Live Bands, Singers, Stand-Up Comedians, DJs, Celebrities, Motivational Speakers, Dancers, Influencers & More</h2>
-
-          <div className="col right-col">
-          <p>
-            Looking To Book <b>Top Live Bands, Singers, Stand-Up Comedians, DJs, Celebrities, Motivational Speakers, Dancers, Influencers & More In Indore?</b> Hire4Event Provides A Best Artist Booking Experience For <b>Corporate Events, Concerts, College Fests, Wedding And Private Parties</b>. We Have An Extensive Network Of <b>Bollywood Celebrities, Live Bands, Traditional Performers, And Unique Act Artists</b> To Make Your Event Unforgettable.
+    <div className="artist-booking">
+      <div className="artist-header text-white py-5 text-center">
+        <div className="container">
+          <h1 className="fw-bold">Book Top Artists In Indore</h1>
+          <p className="mt-3"
+            style={{color:"white"}}>
+            Book live bands, singers, comedians, celebrities, and more with GNV India. Find the perfect artist for your event in Gwalior.
           </p>
         </div>
-
-        </div>
-        
       </div>
 
-      {/* Second Row - 4 Blank Cards */}
-      <div className="row card-row1">
-      {artistprofile.map((index,item) => (
-          <div className="col card1" key={item}>
-         <img style={{width:"250px",height:"200px"}} src={index.image} alt="vghghg"  />
-            <h3>{index.artist}</h3>
-            <div className="rating"> {index.rating}</div>
-            <p><b>Performance Duration: </b> {index.time} -- mins</p>
-            <button>BOOK NOW</button>
+      <div className="container my-5">
+        {artistData.map((section, index) => (
+          <div key={index} className="mb-5" data-aos="fade-up">
+            <h5 className="fw-bold mb-4">{section.title}</h5>
+            <div className="row">
+              {section.artists.map((artist, i) => (
+                <div key={i} className="col-md-3 mb-4">
+                  <div className="card artist-card h-100 shadow-sm">
+                    <img src={artist.image} className="card-img-top" alt={artist.name} />
+                    <div className="card-body">
+                      <h6 className="card-title fw-bold">{artist.name}</h6>
+                      <p className="text-muted mb-1">⭐ {artist.rating} ({artist.reviews} Reviews)</p>
+                      <p className="text-muted small">Performance Duration: {artist.duration}</p>
+                      <button className="btn btn-danger btn-sm">BOOK NOW</button>
+                    </div>
+                  </div>
+                </div>
+                ))}
+            </div>
+            <div className="text-center">
+              <button
+                className="btn btn-outline-danger"
+                onClick={() => {
+                  if (section.title.includes("Comedian")) {
+                    navigate('/comedians'); 
+                  }
+                }}
+              >
+                View More →
+              </button>
+            </div>
           </div>
         ))}
-      </div>  
-      
+      </div>
     </div>
   );
 };

@@ -21,16 +21,16 @@ const Home = () => {
   return (   
     <div className="container-fluid" style={{ padding: "0px" }}>
       <HeroSection />
-      <div>
-        <CorporateEventPlanner />
+      <div className="mt-5 mb-5" > 
+        <CorporateEventPlanner  />
       </div>
-      <div className="container-fluid">
+      <div style={{padding:"0px"}} className="container-fluid">
         <Bookcard />
       </div>     
       <div>
         <EventPlanner />
-      </div>
-      <div>
+      </div> 
+      <div className="mb-5" >
         <PastEvent />
       </div>
       <div>
@@ -57,7 +57,7 @@ const Home = () => {
       <div>
         <Faq/>
       </div>   
-      <div>
+      <div> 
         <BlogPosts/>
       </div>
       <div>

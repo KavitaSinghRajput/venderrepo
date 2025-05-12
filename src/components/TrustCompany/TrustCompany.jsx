@@ -1,69 +1,96 @@
-import React, { useRef, useEffect } from "react";
-import "./TrustCompany.css"; 
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import './TrustCompany.css';
 
-import img1 from './images/Atsogo.png';
-import img2 from './images/thaleslogo.png';
-import img3 from './images/isslogo.png';
-import img4 from './images/ishafoundationlogo.png';
-import img5 from './images/hikelogo.png';
-import img6 from './images/bosslogo.png';
-import img7 from './images/amitlogo.png';
-
-const companies = [
-  { img: img1, alt: "Atsogo" },
-  { img: img2, alt: "Thales" },
-  { img: img3, alt: "ISS" },
-  { img: img4, alt: "Isha Foundation" },
-  { img: img5, alt: "Hike" },
-  { img: img6, alt: "Boss" },
-  { img: img7, alt: "Amit" },
+import image1 from '../../components/TrustCompany/images/accenture.jpeg';
+import image2 from '../../components/TrustCompany/images/bankmaharastra.jpeg';
+import image3 from '../../components/TrustCompany/images/axsibank.jpeg';
+import image4 from '../../components/TrustCompany/images/cipla.jpeg';
+import image5 from '../../components/TrustCompany/images/coii.jpeg';
+import image6 from '../../components/TrustCompany/images/dabar.jpeg';
+import image7 from '../../components/TrustCompany/images/dna.jpeg';
+import image8 from '../../components/TrustCompany/images/eag.jpeg';
+import image9 from '../../components/TrustCompany/images/hdfclife.jpeg';
+import image10 from '../../components/TrustCompany/images/hettich.jpeg';
+import image11 from '../../components/TrustCompany/images/incridableindia.jpeg';
+import image12 from '../../components/TrustCompany/images/johndeere.jpeg';
+import image13 from '../../components/TrustCompany/images/unionbank.jpeg';
+import image14 from '../../components/TrustCompany/images/ultratrack.jpeg';
+import image15 from '../../components/TrustCompany/images/srf.jpeg';
+import image16 from '../../components/TrustCompany/images/sopa.jpeg';
+import image17 from '../../components/TrustCompany/images/solidaridad.jpeg';
+import image18 from '../../components/TrustCompany/images/seventy.jpeg';
+import image19 from '../../components/TrustCompany/images/sbilife.jpeg';
+import image20 from '../../components/TrustCompany/images/WM.jpeg';
+import image21 from '../../components/TrustCompany/images/sbigeneral.jpeg';
+import image22 from '../../components/TrustCompany/images/sbi.jpeg';
+import image23 from '../../components/TrustCompany/images/samsung.jpeg';
+import image24 from '../../components/TrustCompany/images/nationalinstitude.jpeg';
+import image25 from '../../components/TrustCompany/images/lic.jpeg';
+import image26 from '../../components/TrustCompany/images/lenskart.jpeg';
+const images = [
+  { img: image1 },
+  { img: image2 },
+  { img: image3 },
+  { img: image4 },
+  { img: image5 },
+  { img: image6 },
+  { img: image7 },
+  { img: image8 },
+  { img: image9 },
+  { img: image10 },
+  { img: image11},
+  { img: image12 },
+  { img: image13 },
+  { img: image14 },
+  { img: image15 },
+  { img: image16 },
+  { img: image17 },
+  { img: image18 },
+  { img: image19 },
+  { img: image20 },
+  { img: image21 },
+  { img: image22 },
+  { img: image23 },
+  { img: image24 },
+  { img: image25 },
+  { img: image26 },
 ];
 
+const delays = [0, 1000, 2000]; // Delays for different rows
+
 const TrustCompany = () => {
-  const sliderRef = useRef(null);
-
-  const scrollLeft = () => {
-    sliderRef.current.scrollBy({ left: -300, behavior: "smooth" });
-  };
-
-  const scrollRight = () => {
-    sliderRef.current.scrollBy({ left: 300, behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (sliderRef.current) {
-        sliderRef.current.scrollBy({ left: 200, behavior: "smooth" });
-      }
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
-    <div className="trust-company-section">
-      <div className="container">
-        <div className="row text-center mb-4">
-          <div className="col-12">
-            <h2>
-              Companies that <span>trust our work.</span>
-            </h2>
-          </div>
-        </div>
+    <section className="multi-row-slider container-fluid">
+      <h2 className="title text-center mb-4">
+        <span>Our</span> Work
+      </h2>
 
-        <div className="slider-wrapper">
-          <button className="arrow left" onClick={scrollLeft}>‹</button>
-          <div className="slider" ref={sliderRef}>
-            {companies.map((company, index) => (
-              <div className="slide" key={index}>
-                <img src={company.img} alt={company.alt} />
+      {delays.map((delay, rowIndex) => (
+        <Swiper
+          key={rowIndex}
+          modules={[Autoplay]}
+          slidesPerView={3}
+          spaceBetween={20}
+          loop={true}
+          autoplay={{
+            delay: 3000 + delay,
+            disableOnInteraction: false,
+          }}
+          className="swiper-row mb-4"
+        >
+          {images.map((src, i) => (
+            <SwiperSlide key={`${rowIndex}-${i}`}>
+              <div className="image-card">
+                <img src={src.img} alt={`Slide ${i}`} />
               </div>
-            ))}
-          </div>
-          <button className="arrow right" onClick={scrollRight}>›</button>
-        </div>
-      </div>
-    </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ))}
+    </section>
   );
 };
 

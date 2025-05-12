@@ -35,7 +35,7 @@
 import React from 'react';
 import './ContactWidget.css';
 import { FaWhatsapp, FaHeadset, FaPhoneAlt } from 'react-icons/fa';
-import { useScrollTrigger } from './ScrollTrigger'; // 👈
+import { useScrollTrigger } from '../ScrollTriger/ScrollTrigger'; // 👈
 
 const ContactWidget = () => {
   const showWidget = useScrollTrigger(); // 👈

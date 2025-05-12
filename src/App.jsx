@@ -45,7 +45,7 @@ import Eventrental from "./pages/EventRental/Eventrental";
 import EventPlanner from "./pages/EventPlanner/EventPlanner";
 import ContactUs from "./pages/Contact Us/ContactUs";
 import VolunteerBooking from "./pages/VolunteerBooking/VolunteerBooking";
-import ScrollProvider from "./components/ScrollTriger/ScrollTrigger"
+import { ScrollProvider } from "./components/ScrollTriger/ScrollTrigger";
 
 function App() {
   return (
@@ -54,6 +54,7 @@ function App() {
         <EventPopup />
         <TopNavbar />
         <Navbar />
+
         <ScrollProvider>
           <SocialSidebar />
           <ContactWidget />

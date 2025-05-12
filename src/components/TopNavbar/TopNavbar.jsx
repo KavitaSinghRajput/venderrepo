@@ -1,28 +1,102 @@
-import React from 'react';
-import './TopNavbar.css';
-import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
+import React, { useEffect, useState } from "react";
+import "./TopNavbar.css";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const TopNavbar = () => {    
+const TopNavbar = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      const visible = currentScroll < 50;
+      setIsVisible(visible);
+
+      if (!visible) {
+        document.body.classList.add("top-navbar-hidden");
+      } else {
+        document.body.classList.remove("top-navbar-hidden");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="top-navbar py-2 px-3  ">
+    <div className={`top-navbar py-2 px-3 ${isVisible ? "show" : "hide"}`}>
       <div className="container-fluid d-flex flex-wrap justify-content-between align-items-center">
         <div className="d-flex align-items-center gap-3 flex-wrap text-dark contact-info">
-  <span><i className="bi bi-envelope me-2 text-primary"></i>events@gnvindia.in</span>
-         <span><i className="bi bi-telephone me-2 text-success"></i>+91-9691474449</span>
+          <span>
+            <i className="bi bi-envelope me-2 text-primary"></i>
+            events@gnvindia.in
+          </span>
+          <span>
+            <i className="bi bi-telephone me-2 text-success"></i>
+            +91-9691474449
+          </span>
         </div>
 
-        {/* <div className="d-flex align-items-center gap-2 flex-wrap">
-          <button className="btn btn-job">Job Openings</button>
-          <button className="btn btn-artist">Create Artist Profile</button>
-        </div> */}
-
-       
         <div className="d-flex align-items-center gap-3 flex-wrap social-icons">
-          <a href="#"><FaFacebookF className="icon" /> Facebook</a>
-          <a href="#"><FaInstagram className="icon" /> Instagram</a>
-          <a href="#"><FaYoutube className="icon" /> YouTube</a>
-          <a href="#"><FaLinkedinIn className="icon" /> LinkedIn</a>
-          <button className="btn btn-account">ACCOUNT</button>
+          <Link to="https://www.facebook.com/gnvindiaevents">
+            <FaFacebookF className="icon" /> Facebook
+          </Link>
+          <Link to="https://www.instagram.com/gnvindiaevents/" >
+            <FaInstagram className="icon" /> Instagram
+          </Link>
+          <Link to="https://www.youtube.com/@gnvindia7">
+            <FaYoutube className="icon" /> YouTube
+          </Link>
+          <Link to="https://www.linkedin.com/company/gnv-india-entertainment/" >
+            <FaLinkedinIn className="icon" /> LinkedIn
+          </Link>
+
+          <div className="dropdown">
+            <button
+              className="btn btn-account dropdown-toggle"
+              type="button"
+              id="accountDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              ACCOUNT
+            </button>
+            <ul className="dropdown-menu" aria-labelledby="accountDropdown">
+              <li>
+                <Link className="dropdown-item" to="/login">
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item" to="/signup">
+                  Signup
+                </Link>
+              </li>
+              <li>
+                <hr className="dropdown-divider" />
+              </li>
+              <li>
+                <Link className="dropdown-item" to="/Registration">
+                  Vendor Registration
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item" to="/MyBoard">
+                  MyDashboard
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item" to="/BasicDetail">
+                  CreateArtistProfile
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -3,16 +3,12 @@
   import AOS from 'aos';
   import 'aos/dist/aos.css';
   import '@fortawesome/fontawesome-free/css/all.min.css';
-  
-   import img1 from '../../VenueBooking/IndoreCity/assets2/gh.jpeg';
-   import img2 from '../../VenueBooking/IndoreCity/assets2/citrus hotel.jpeg';
-   import img3 from '../../VenueBooking/IndoreCity/assets2/effotel hotel.jpeg';
-   import img4 from '../../VenueBooking/IndoreCity/assets2/ginger.jpeg';
-   import img5 from '../../VenueBooking/IndoreCity/assets2/lemon tree hotel.jpeg';
-   import img6 from '../../VenueBooking/IndoreCity/assets2/pride hotel.jpeg';
-   import img7 from '../../VenueBooking/IndoreCity/assets2/sayajii hotel.jpeg';
-  import img8 from '../../VenueBooking/IndoreCity/assets2/treebo trip phoenix.jpeg';
-  
+       
+   import img1 from '../../VenueBooking/GwaliorCity/assets21/citypark.jpg';
+   import img2 from '../../VenueBooking/GwaliorCity/assets21/royelinn.jpg';
+   import img3 from '../../VenueBooking/GwaliorCity/assets21/tansan.jpg';
+   import img4 from '../../VenueBooking/GwaliorCity/assets21/ushataj.jpg';
+   
   const GwaliorCity = () => {
     useEffect(() => {
       AOS.init({ once: true, duration: 800, easing: 'ease-out-quart' });
@@ -22,14 +18,11 @@
     const handleClick = (i) => setSelected(i);
   
     const venues = [
-   { image: img1, venue: "Brilliant Hotel", rating: "4.5", address: "Plot No 5, Vijay Nagar" },
-       { image: img2, venue: "Citrus Hotel",   rating: "5.0", address: "Vijay Nagar Square"   },
-       { image: img3, venue: "Effotel Hotel",  rating: "4.3", address: "Scheme 94 CA"         },
-       { image: img4, venue: "Ginger",         rating: "3.9", address: "Choti Khajrani"       },
-       { image: img5, venue: "Lemon Tree",     rating: "4.0", address: "South Tukoganj"       },
-       { image: img6, venue: "Pride Hotel",    rating: "4.1", address: "Bicholi Mardana"      },
-       { image: img7, venue: "Sayaji Hotel",   rating: "4.4", address: "Maguda Nagar"         },
-       { image: img8, venue: "Treebo Phoenix", rating: "3.0", address: "Nanak Nagar"          },
+   { image: img1,    venue: "CentralPark Hotel", rating: "4.5", address: "Madhav Rao Scindia Marg, opp. Vishal Mega mart, City Center, Mahalgaon, Gwalior, Madhya Pradesh 474001" },
+       { image: img2, venue: "Royelinn Hotel",   rating: "5.0", address: "Hotel, Nagar Nigam, 5, Main Rd, City Center, Patel Nagar, Gwalior, Madhya Pradesh 474011"   },
+       { image: img3, venue: "Tansan Hotel",  rating: "4.3", address: "6-A, Gandhi Rd, LNUPE Campus, Thatipur, Gwalior, Madhya Pradesh 474002"         },
+       { image: img4, venue: "UshaTaj Hotel",         rating: "3.9", address: "near Saraswati Shishu Mandir, Jayendraganj, Lashkar, Gwalior, Madhya Pradesh 474009"       },
+      
      ];
   
     return (
@@ -44,6 +37,7 @@
             data-aos="fade-down"
             data-aos-duration="1000"
             data-aos-delay="200"
+             style={{color:"white"}}
           >
             Book Top <span className="highlight">Venues In Gwalior</span>
           </h2>
@@ -52,6 +46,7 @@
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="400"
+             style={{color:"white"}}
             
           >
            Looking To Book The Best Venues In GwaliorCity for your Next Event? GNVIndia offers A Seamless Venue Booking Experience For Corporate Events, Weddings, Exhibitions, And Private Parties. Choose From Our Extensive Network Of Banquet Halls, Luxury Hotels, Outdoor Lawns, Resorts, And Convention Centers To Make Your Event Truly Special.

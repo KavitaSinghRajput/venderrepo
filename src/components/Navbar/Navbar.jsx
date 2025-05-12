@@ -140,52 +140,6 @@ function Navbar() {
                 Contact Us
               </Link>
             </li>
-{/* 
-            <li className="nav-item">
-              <Link className="nav-link btn-primary btncust" to="/EventPopup">
-                Plan Your Event
-              </Link>
-            </li> */}
-
-              <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-              >
-                Account
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/login">
-                    Login
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/signup">
-                    Signup
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/Registration">
-                    Vendor Registration
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/MyBoard">
-                    MyDashboard
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/BasicDetail">
-                    CreateArtistProfile
-                  </Link>
-                </li>
-              </ul>
-            </li>  
-
-
           </ul>
         </div>
       </div>

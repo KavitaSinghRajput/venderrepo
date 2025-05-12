@@ -59,7 +59,7 @@
 }
 
 .past-events .event-card img {
-  width: 900px;
+  width: 200px;
   height: 340px;
   transition: transform 0.4s ease;
 }
@@ -76,11 +76,11 @@
 /* Contact Button */
 .contact-btn {
   display: inline-block;
-  padding: 10px 20px;
+   padding: 10px 40px;
   background-color: #0062ff;
   color: white;
   font-weight: 600;
-  border-radius: 5px;
+  border-radius: 40px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -94,4 +94,5 @@
 .contact-btn:hover {
   background-color: #004ecc;
   transform: scale(1.05);
+  color:white;
 }

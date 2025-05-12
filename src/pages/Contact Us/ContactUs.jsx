@@ -74,9 +74,8 @@ const ContactUs = () => {
                   "instagram",
                   "facebook",
                   "youtube",
-                  "twitter",
                   "linkedin",
-                  "pinterest",
+                 
                 ].map((icon, idx) => (
                   <i className={`bi bi-${icon}`} key={idx}></i>
                 ))}

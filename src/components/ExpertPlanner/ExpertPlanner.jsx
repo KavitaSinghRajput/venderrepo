@@ -5,7 +5,7 @@ const ExpertPlanner = () => {
   return (
     <div className="container my-5">
       
-      <div className="row g-4">
+      <div className="row g-4">  
         {/* Left Images */}
         <div className="col-md-6">
           <div className="row g-3">

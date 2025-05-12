@@ -4,13 +4,8 @@ import "./OnlineBooking.css";
 const categories = [
   "Book Actor/Actress", "Book Anchor", "Book Belly Dancer", "Book Bhangra Group",
   "Book Bollywood Dance", "Book Celebrity", "Book Stand-up Comedian", "Book Dancer",
-  "Book Dancetroupe", "Book DJ", "Book Duo, Trio Band", "Book Emcee", "Book Folk Singer",
-  "Book Group Dancer", "Book Host", "Book Hostess", "Book Influencer", "Book Instrumentalist",
-  "Book Live Band", "Book Magician", "Book Makeup Artist", "Book Model",
-  "Book Motivational speaker", "Book Live Painter", "Book Photographer", "Book Poet",
-  "Book Live Singer", "Book Speaker", "Book Spiritual Person", "Book Traditional Dance Group",
-  "Book Traditional Singing Group", "Book Unique act performer"
-];
+  "Book Dancetroupe", "Book DJ", "Book Duo, Trio Band",
+];  
 
 const OnlineBooking = () => {
   return (

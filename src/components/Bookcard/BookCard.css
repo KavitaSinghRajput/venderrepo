@@ -1,6 +1,6 @@
 .bookcard-wrapper {
   background-color: #fff5f5;
-  margin: 15px 20px;
+  margin: 30px 20px;
 }
 
 .card-custom {
@@ -71,7 +71,7 @@
 
   .card-img {
     height: 180px;
-  }
+  }   
 
   .bookcard-wrapper {
     padding-left: 15px;

@@ -1,15 +1,35 @@
-.navbar {
+/* .navbar {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   padding: 10px 20px;
   z-index: 1000;
+} */
+
+
+
+.navbar {
+  position: sticky;
+  top: 40px; /* default space when TopNavbar is visible */
+  width: 100%;
+  z-index: 1020;
+  transition: top 0.3s ease;
 }
+.navbar {
+  top: 40px; /* space when TopNavbar is visible */
+  transition: top 0.3s ease;
+}
+
+body.top-navbar-hidden .navbar {
+  top: 0; /* shift up when TopNavbar hides */
+}
+
+
 
 .navbar-brand img {
   height: 45px;
   object-fit: contain;
 }    
-    
+     
 .navbar-nav {
   gap: 10px;
 }

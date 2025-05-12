@@ -4,14 +4,14 @@
       import 'aos/dist/aos.css';
       import '@fortawesome/fontawesome-free/css/all.min.css';
       
-      import img1 from '../../VenueBooking/IndoreCity/assets2/gh.jpeg';
-       import img2 from '../../VenueBooking/IndoreCity/assets2/citrus hotel.jpeg';
-       import img3 from '../../VenueBooking/IndoreCity/assets2/effotel hotel.jpeg';
-       import img4 from '../../VenueBooking/IndoreCity/assets2/ginger.jpeg';
-       import img5 from '../../VenueBooking/IndoreCity/assets2/lemon tree hotel.jpeg';
-       import img6 from '../../VenueBooking/IndoreCity/assets2/pride hotel.jpeg';
-       import img7 from '../../VenueBooking/IndoreCity/assets2/sayajii hotel.jpeg';
-       import img8 from '../../VenueBooking/IndoreCity/assets2/treebo trip phoenix.jpeg';
+       import img1 from '../../VenueBooking/JabalpurCity/assets22/aashirwad.jpg';
+       import img2 from '../../VenueBooking/JabalpurCity/assets22/delitegrand.webp';
+       import img3 from '../../VenueBooking/JabalpurCity/assets22/jabalihotel.jpg';
+       import img4 from '../../VenueBooking/JabalpurCity/assets22/maxhotel.webp';
+       import img5 from '../../VenueBooking/JabalpurCity/assets22/rishikregencyg.webp';
+       import img6 from '../../VenueBooking/JabalpurCity/assets22/sukoonpear.jpg';
+      
+       
       
       const JabalpurCity = () => {
         useEffect(() => {
@@ -22,14 +22,13 @@
         const handleClick = (i) => setSelected(i);
       
         const venues = [
-            { image: img1, venue: "Brilliant Hotel", rating: "4.5", address: "Plot No 5, Vijay Nagar" },
-           { image: img2, venue: "Citrus Hotel",   rating: "5.0", address: "Vijay Nagar Square"   },
-           { image: img3, venue: "Effotel Hotel",  rating: "4.3", address: "Scheme 94 CA"         },
-           { image: img4, venue: "Ginger",         rating: "3.9", address: "Choti Khajrani"       },
-           { image: img5, venue: "Lemon Tree",     rating: "4.0", address: "South Tukoganj"       },
-           { image: img6, venue: "Pride Hotel",    rating: "4.1", address: "Bicholi Mardana"      },
-           { image: img7, venue: "Sayaji Hotel",   rating: "4.4", address: "Maguda Nagar"         },
-           { image: img8, venue: "Treebo Phoenix", rating: "3.0", address: "Nanak Nagar"          },
+             { image: img1, venue: "Aashirwad Hotel", rating: "4.5", address: "Opposite Krishi Upaj Mandi Gate no. 2 near Deen Dayal Chowk ISBT, Damoh Rd, Jabalpur, Madhya Pradesh 482001" },
+            { image: img2, venue: "Delitegrand Hotel",   rating: "5.0", address: "Delite Talkies Campus, Delite Talkies Ln, near Railway Station Road, Prestige Town, South Civil Lines, Jabalpur, Madhya Pradesh 482001"   },
+            { image: img3, venue: "Jabali Hotel",  rating: "4.3", address: "near Medical College Of Jabalpur, Jasuja City, Dhanvantari Nagar, Jabalpur, Madhya Pradesh 482003"         },
+            { image: img4, venue: "max Hotel",         rating: "3.9", address: "Multi-Functional Complex, 6, Railway Station Rd, near platform, South Civil Lines, Jabalpur, Madhya Pradesh 482001"       },
+            { image: img5, venue: "Rishikregencyg Hotel",     rating: "4.0", address: "opposite State Bank Of India, near 2nd Bridge, South Civil Lines, Jabalpur, Madhya Pradesh 482001"       },
+            { image: img6, venue: "Sukoonpear Hotel",    rating: "4.1", address: "Nagpur Highway Road Near Tilwara Bridge Jabalpur,482003 India"      },
+            
         ];
       
         return (
@@ -44,6 +43,7 @@
                 data-aos="fade-down"
                 data-aos-duration="1000"
                 data-aos-delay="200"
+                  style={{color:"white"}}
               >
                 Book Top <span className="highlight">Venues in JabalpurCity</span>
               </h2>
@@ -52,12 +52,13 @@
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="400"
+                  style={{color:"white"}}
                 
               >
                Looking To Book The Best Venues In JabalpurCity for your Next Event? GNVIndia offers A Seamless Venue Booking Experience For Corporate Events, Weddings, Exhibitions, And Private Parties. Choose From Our Extensive Network Of Banquet Halls, Luxury Hotels, Outdoor Lawns, Resorts, And Convention Centers To Make Your Event Truly Special.
               </p>
             </div>
-      
+        
             {/* Venue Cards */}
             <div className="container py-5">
               <div className="row">

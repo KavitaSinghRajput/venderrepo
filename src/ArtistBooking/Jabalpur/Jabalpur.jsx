@@ -2,52 +2,34 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Jabalpur.css';
-import { useNavigate } from 'react-router-dom'; // ✅ Step 1: Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
+
+
+import artist1 from '../../ArtistBooking/Jabalpur/assets31/artist1.jpg';
+import artist2 from '../../ArtistBooking/Jabalpur/assets31/artist2.jpg';
+import artist3 from '../../ArtistBooking/Jabalpur/assets31/artist3.webp';
+import artist4 from '../../ArtistBooking/Jabalpur/assets31/artist4.jpg';
 
 const Jabalpur = () => {
   useEffect(() => {
     AOS.init({ duration: 800 });
   }, []);  
 
-  const navigate = useNavigate(); // ✅ Step 2: Initialize navigate
+  const navigate = useNavigate(); 
 
   const artistData = [
     {
       title: "Book The Best Live Band For Events And Weddings In Bhopal",
       artists: [
-        { name: "Swarvig The Band", image: "https://via.placeholder.com/200x150", rating: "4.5★", reviews: "1010", duration: "90-120 Mins" },
-        { name: "Dhaiwat the Band", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "1375", duration: "90-120 Mins" },
-        { name: "Nicotine Band", image: "https://via.placeholder.com/200x150", rating: "4.4★", reviews: "1578", duration: "90-120 Mins" },
-        { name: "Swar Project", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "1027", duration: "90-120 Mins" }
+        { name: "Ishita Vishwakarma", image: artist1, rating: "4.5★", reviews: "1010", duration: "90-120 Mins" },
+        { name: "Hemesh Raj", image: artist2, rating: "4.6★", reviews: "1375", duration: "90-120 Mins" },
+        { name: "ShridharNagraj", image: artist3, rating: "4.4★", reviews: "1578", duration: "80-120 Mins" },
+        { name: "Shashwat Singh", image: artist4, rating: "4.5★", reviews: "1027", duration: "0-120 Mins" }
       ]
     },
-    {
-      title: "Book The Best Live Singer For Events, Weddings, And College Fests In Bhopal",
-      artists: [
-        { name: "Sanjay Kumar", image: "https://via.placeholder.com/200x150", rating: "4.7★", reviews: "775", duration: "90-120 Mins" },
-        { name: "Pragya Jain", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "824", duration: "90-120 Mins" },
-        { name: "Asad Khan", image: "https://via.placeholder.com/200x150", rating: "4.5★", reviews: "1885", duration: "90-120 Mins" },
-        { name: "Lash Curry", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "1548", duration: "90-120 Mins" }
-      ]
-    },
-    {
-      title: "Book Top Stand-Up Comedians For Corporate Events In Bhopal",
-      artists: [
-        { name: "Bobby Chourasiya", image: "https://via.placeholder.com/200x150", rating: "4.7★", reviews: "620", duration: "45-90 Mins" },
-        { name: "Anmol Garg", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "1140", duration: "60-120 Mins" },
-        { name: "Rohit Swain", image: "https://via.placeholder.com/200x150", rating: "4.7★", reviews: "5720", duration: "45-90 Mins" },
-        { name: "Pranav Sharma", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "7980", duration: "30-45 Mins" }
-      ]
-    },
-    {
-      title: "Book Top Actor/Actress For Event In Bhopal",
-      artists: [
-        { name: "Shivangi Khedkar", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "8726", duration: "90-120 Mins" },
-        { name: "Amit Bhatt", image: "https://via.placeholder.com/200x150", rating: "4.9★", reviews: "9607", duration: "90-120 Mins" },
-        { name: "Pradeep Machiraju", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "8086", duration: "90-120 Mins" },
-        { name: "Lahari Shari", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "8703", duration: "90-120 Mins" }
-      ]
-    }
+    
+    
+    
   ];
 
   return (
@@ -55,7 +37,8 @@ const Jabalpur = () => {
       <div className="artist-header text-white py-5 text-center">
         <div className="container">
           <h1 className="fw-bold">Book Top Artists In Jabalpur</h1>
-          <p className="mt-3">
+          <p className="mt-3"
+            style={{color:"white"}}>
             Book live bands, singers, comedians, celebrities, and more with GNV India. Find the perfect artist for your event in Jabalpur.
           </p>
         </div>

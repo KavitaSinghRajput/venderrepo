@@ -6,10 +6,7 @@ const EventPopup = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShow(true);
-    }, 3000); // Show after 3 seconds
-
+    const timer = setTimeout(() => setShow(true), 3000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -24,28 +21,29 @@ const EventPopup = () => {
       className="event-modal"
       backdrop="static"
     >
-      {/* 👇 Close button area */}
+      {/* X Close Button */}
       <Modal.Header closeButton className="border-0 pb-0" />
 
       <Modal.Body className="d-flex flex-column flex-md-row p-0">
-        <div className="p-4 flex-fill bg-white">
-          <h4 className="modal-title">
-            Creating the <span className="text-danger">Perfect Event</span>, Together
+        {/* Left Side: Form */}
+        <div className="form-section p-4 flex-fill bg-white">
+          <h4 className="modal-title mb-3">
+            Creating the <span className="text-primary">Perfect Event</span>, Together
           </h4>
-          <p className="mb-4 small text-muted">
+          <p className="small text-muted mb-4">
             Tell us about your event, and we’ll craft an experience you’ll cherish forever. Start planning today!
           </p>
 
           <Form>
             <div className="row g-3">
               <div className="col-md-6">
-                <Form.Control type="text" placeholder="Your Name*" />
+                <Form.Control type="text" placeholder="Ex: Tanya Saxena" />
               </div>
               <div className="col-md-6">
-                <Form.Control type="text" placeholder="Your Phone*" />
+                <Form.Control type="text" placeholder="Ex: 9999999999" />
               </div>
               <div className="col-md-6">
-                <Form.Control type="email" placeholder="Your Email*" />
+                <Form.Control type="email" placeholder="Ex: tanya007@gmail.com" />
               </div>
               <div className="col-md-6">
                 <Form.Select>
@@ -56,11 +54,12 @@ const EventPopup = () => {
                 </Form.Select>
               </div>
               <div className="col-md-6">
-                <Form.Control type="text" placeholder="Organization Name" />
+                <Form.Control type="text" placeholder="Your Company Name" />
               </div>
               <div className="col-md-6">
                 <Form.Select>
                   <option>Budget</option>
+                  <option>1L to 5L</option>
                   <option>5L to 10L</option>
                   <option>10L to 25L</option>
                   <option>25L+</option>
@@ -79,6 +78,15 @@ const EventPopup = () => {
               </div>
             </div>
           </Form>
+        </div>
+
+        {/* Right Side: Image */}
+        <div className="popup-image d-none d-md-block">
+          <img
+            src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+            alt="Event Visual"
+            className="img-fluid h-100 w-100 object-fit-cover"
+          />
         </div>
       </Modal.Body>
     </Modal>

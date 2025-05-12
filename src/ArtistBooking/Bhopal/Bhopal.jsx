@@ -2,7 +2,15 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './Bhopal.css';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';  
+
+
+import artist1 from '../../ArtistBooking/Bhopal/assets33/artist1.jpeg';
+import artist2 from '../../ArtistBooking/Bhopal/assets33/artist2.jpeg';
+import artist3 from '../../ArtistBooking/Bhopal/assets33/artist3.jpeg';
+import artist4 from '../../ArtistBooking/Bhopal/assets33/artist4.jpeg';
+
+
 
 const Bhopal = () => {
   useEffect(() => {
@@ -15,39 +23,16 @@ const Bhopal = () => {
     {
       title: "Book The Best Live Band For Events And Weddings In Bhopal",
       artists: [
-        { name: "Swarvig The Band", image: "https://via.placeholder.com/200x150", rating: "4.5★", reviews: "1010", duration: "90-120 Mins" },
-        { name: "Dhaiwat the Band", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "1375", duration: "90-120 Mins" },
-        { name: "Nicotine Band", image: "https://via.placeholder.com/200x150", rating: "4.4★", reviews: "1578", duration: "90-120 Mins" },
-        { name: "Swar Project", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "1027", duration: "90-120 Mins" }
+        { name: "Ayush Rojariya", image: artist1, rating: "4.5★", reviews: "1010", duration: "90-100 Mins" },
+        { name: "Shahab Masoom", image: artist2, rating: "4.6★", reviews: "1375", duration: "90-130 Mins" },
+        { name: "Dhruv Chorasiya", image: artist3, rating: "4.4★", reviews: "1578", duration: "85-120 Mins" },
+        { name: "Pooja Thakre", image: artist4, rating: "4.6★", reviews: "1027", duration: "75-100 Mins" }
       ]
     },
-    {
-      title: "Book The Best Live Singer For Events, Weddings, And College Fests In Bhopal",
-      artists: [
-        { name: "Sanjay Kumar", image: "https://via.placeholder.com/200x150", rating: "4.7★", reviews: "775", duration: "90-120 Mins" },
-        { name: "Pragya Jain", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "824", duration: "90-120 Mins" },
-        { name: "Asad Khan", image: "https://via.placeholder.com/200x150", rating: "4.5★", reviews: "1885", duration: "90-120 Mins" },
-        { name: "Lash Curry", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "1548", duration: "90-120 Mins" }
-      ]
-    },
-    {
-      title: "Book Top Stand-Up Comedians For Corporate Events In Bhopal",
-      artists: [
-        { name: "Bobby Chourasiya", image: "https://via.placeholder.com/200x150", rating: "4.7★", reviews: "620", duration: "45-90 Mins" },
-        { name: "Anmol Garg", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "1140", duration: "60-120 Mins" },
-        { name: "Rohit Swain", image: "https://via.placeholder.com/200x150", rating: "4.7★", reviews: "5720", duration: "45-90 Mins" },
-        { name: "Pranav Sharma", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "7980", duration: "30-45 Mins" }
-      ]
-    },
-    {
-      title: "Book Top Actor/Actress For Event In Bhopal",
-      artists: [
-        { name: "Shivangi Khedkar", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "8726", duration: "90-120 Mins" },
-        { name: "Amit Bhatt", image: "https://via.placeholder.com/200x150", rating: "4.9★", reviews: "9607", duration: "90-120 Mins" },
-        { name: "Pradeep Machiraju", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "8086", duration: "90-120 Mins" },
-        { name: "Lahari Shari", image: "https://via.placeholder.com/200x150", rating: "4.6★", reviews: "8703", duration: "90-120 Mins" }
-      ]
-    }
+    
+    
+   
+    
   ];
 
   return (
@@ -55,7 +40,8 @@ const Bhopal = () => {
       <div className="artist-header text-white py-5 text-center">
         <div className="container">
           <h1 className="fw-bold">Book Top Artists In Bhopal</h1>
-          <p className="mt-3">
+          <p className="mt-3" 
+            style={{color:"white"}}>
             Book live bands, singers, comedians, celebrities, and more with GNV India. Find the perfect artist for your event in Bhopal.
           </p>
         </div>

@@ -44,6 +44,7 @@ const IndoreCity = () => {
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-delay="200"
+            style={{color:"white"}}
         >
           Book Top <span className="highlight">Venues in Indore</span>
         </h2>
@@ -52,6 +53,7 @@ const IndoreCity = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="400"
+            style={{color:"white"}}
           
         >
          Looking To Book The Best Venues In BhopalCity for your Next Event? GNVIndia offers A Seamless Venue Booking Experience For Corporate Events, Weddings, Exhibitions, And Private Parties. Choose From Our Extensive Network Of Banquet Halls, Luxury Hotels, Outdoor Lawns, Resorts, And Convention Centers To Make Your Event Truly Special.

@@ -6,36 +6,33 @@ const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="container-fluid">
-        {/* Row 1 - Title and Description */}
         <div className="row mb-5">
           <div className="col-12 text-center">
             <h2 className="footer-title">
               GNVindiaEvents – Your Trusted Event Management Partner
             </h2>
             <p className="footer-description">
-              GNVindiaEvents is a leading event management company in Madhya Pradesh offering expert solutions for corporate events, trade
+              GNVindiaEvents is a leading event management company in Madhya
+              Pradesh offering expert solutions for corporate events, trade
               shows, artist bookings, equipment rentals, and more. From planning
               to execution, we ensure seamless and memorable experiences.
             </p>
           </div>
         </div>
-
-        {/* Row 2 - Address | Newsletter | Home */}
         <div className="row mb-5">
-          <div className="col-md-4">
+          <div className="col-md-4 text-center">
             <h5>Address Location</h5>
             <p></p>
             <p>
               Phone: <a href="tel:+919691474449">+91-9691474449</a>
             </p>
             <p>
-              Email:{" "}
-              <a href="mailto:events@gnvindia.in">events@gnvindia.in</a>
+              Email: <a href="mailto:events@gnvindia.in">events@gnvindia.in</a>
             </p>
             <p>Office Time: 10:00 AM to 6:00 PM (Mon to Sat)</p>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-md-4 text-center">
             <h5>Newsletter</h5>
             <p>You will be notified when something new will appear.</p>
             <form className="newsletter-form">
@@ -46,7 +43,7 @@ const Footer = () => {
             </form>
           </div>
 
-          <div className="col-md-4">
+           {/* <div className="col-md-4">
             <h5>Home</h5>
             <ul className="footer-links">
               <li>
@@ -74,12 +71,12 @@ const Footer = () => {
                 <a href="#">Services</a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
-        {/* Row 3 - Occasions | Services | Quick Links | Top Event Management */}
+         {/* Row 3 - Occasions | Services | Quick Links | Top Event Management */}
         <div className="row">
-          <div className="col-md-3">
+          {/* <div className="col-md-3">
             <h5>Occasions</h5>
             <ul className="footer-links">
               <li>
@@ -107,9 +104,9 @@ const Footer = () => {
                 <a href="#">Sports Event in Indore</a>
               </li>
             </ul>
-          </div>
+          </div>  */}
 
-          <div className="col-md-3">
+          {/* <div className="col-md-3">
             <h5>Services</h5>
             <ul className="footer-links">
               <li>
@@ -134,9 +131,9 @@ const Footer = () => {
                 <a href="#">Trip Planning & Management</a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
-          <div className="col-md-3">
+          {/* <div className="col-md-3">
             <h5>Quick Links</h5>
             <ul className="footer-links">
               <li>
@@ -148,7 +145,7 @@ const Footer = () => {
               <li>
                 <a href="#">Book Venue</a>
               </li>
-              
+
               <li>
                 <a href="#">Trending Blogs</a>
               </li>
@@ -159,9 +156,9 @@ const Footer = () => {
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
-          <div className="col-md-3">
+          {/* <div className="col-md-3">
             <h5>Top Event Management</h5>
             <ul className="footer-links">
               <li>
@@ -180,25 +177,27 @@ const Footer = () => {
                 <a href="#">Artist management in Indore</a>
               </li>
             </ul>
+          </div> */}
+        </div>
+        {/* Row 2 - Bottom Bar */}
+        <div className="container-fluid bg-white">
+          <div className="row bottom-bar  align-items-center">
+            <div className="col-md-4 text-start">
+              <p>©Copyright 2023–2025 All Rights Reserved</p>
+            </div>
+
+            <div className="col-md-4 text-center">
+              <img src={logo} alt="Gnv logo" style={{ height: "45px" }} />
+            </div>
+
+            <div className="col-md-4 text-end">
+              <p className="designed-by">
+                Designed by <span>GNVIndia IT Team</span>
+              </p>
+            </div>
           </div>
         </div>
-         {/* Row 2 - Bottom Bar */}
-         <div className="container-fluid bg-white">
-        <div className="row bottom-bar  align-items-center">
-          <div className="col-md-4 text-start">
-            <p>©Copyright 2023–2025 All Rights Reserved</p>
-          </div>
-
-          <div className="col-md-4 text-center">
-           <img src={logo} alt="Gnv logo" style={{ height: "45px" }} />
-          </div>
-
-          <div className="col-md-4 text-end">
-            <p className="designed-by">Designed by <span>GNVIndia IT Team</span></p>
-          </div>
-        </div>
-         </div>
-         </div>
+      </div>
     </footer>
   );
 };

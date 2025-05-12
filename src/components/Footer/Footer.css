@@ -1,4 +1,4 @@
-.footer-section {
+ .footer-section {
     background-color: #111;
     color: #ccc;
     padding: 60px 0;
@@ -87,7 +87,7 @@
   
   .footer-logo {
     width: 100px;
-    height: auto;
+    height: auto;  
    
   }
   
@@ -100,4 +100,8 @@
     font-weight: bold;
   }
   
-  
+   
+
+
+
+

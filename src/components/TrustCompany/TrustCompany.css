@@ -1,125 +1,38 @@
-.trust-company-section {
-  background: #1f1f1f;
-  padding: 60px 0;
-  color: white;
+.multi-row-slider {
+  padding: 50px 10px;
+  background-color: #f9f9f9;
 }
 
-.trust-company-section h2 {
-  font-size: 36px;
-  font-weight: 700;
+.multi-row-slider .title {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.trust-company-section h2 span {
-  color: #e63946;
+.multi-row-slider .title span {
+  color: #f7b500;
 }
 
-.slider-wrapper {
-  position: relative;
+.swiper-row {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.image-card {
+  background: #fff;
+  border-radius: 10px;
   overflow: hidden;
-  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.slider {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px 0;
-  scrollbar-width: none; /* Firefox */
+.image-card:hover {
+  transform: scale(1.05);
 }
 
-.slider::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
-}
-
-.slide {
-  flex: 0 0 auto;
-  width: 160px;
-  height: 100px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
-
-.slide img {
-  max-width: 100%;
-  max-height: 80%;
-  object-fit: contain;
-}
-
-/* Arrows */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #e63946;
-  color: white;
-  border: none;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 2;
-  transition: background 0.3s;
-}
-
-.arrow:hover {
-  background: #c92030;
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-  .trust-company-section h2 {
-    font-size: 28px;
-  }
-
-  .slide {
-    width: 140px;
-    height: 90px;
-  }
-
-  .arrow {
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .trust-company-section {
-    padding: 40px 15px;
-  }
-
-  .trust-company-section h2 {
-    font-size: 22px;
-    line-height: 1.4;
-  }
-
-  .slider {
-    gap: 15px;
-    padding: 10px 0;
-  }
-
-  .slide {
-    width: 120px;
-    height: 80px;
-  }
-
-  .arrow {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-  }
+.image-card img {
+  width: 90%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
